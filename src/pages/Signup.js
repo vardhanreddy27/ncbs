@@ -5,11 +5,11 @@ function Signup() {
   return (
     <>
       <Link href="/">
-        <h1 id="title" className="font-bold text-4xl pl-4 pt-4 logo bg-gray-100">EduAdapt</h1>
+        <h1 id="title" className="font-bold text-4xl pl-4 pt-4 logo bg-gray-100">NCBS</h1>
       </Link>
       <div className="flex justify-center bg-gray-100">
         <div className="bg-white mb-16 mt-2 p-6 rounded-lg shadow-lg w-full max-w-md">
-          <h2 className="text-2xl font-bold mb-2 text-gray-900 text-center">SignUp for EduAdapt</h2>
+          <h2 className="text-2xl font-bold mb-2 text-gray-900 text-center">Sign Up for NCBS</h2>
           <form className="space-y-4">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>

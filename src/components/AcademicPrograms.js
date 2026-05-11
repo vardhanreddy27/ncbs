@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { schoolInfo } from "@/constants/schoolData";
 
 function AnimatedWords({ text, animateKey, className = "", delayStep = 28, baseDelay = 0 }) {
   const words = text.split(" ");
@@ -23,17 +24,17 @@ export default function AcademicPrograms() {
   const steps = useMemo(
     () => [
       {
-        phase: "Experience",
-        title: "1. Hands-On First",
+        phase: "About NCBS",
+        title: "1. Learn with Understanding",
         description:
-          "We start with hands-on experiments. By doing first, students build a real mental map of concepts before touching a textbook.",
-        topImage: "/physicslab.jpeg",
-        bottomImage: "/mathslabsection.jpg",
-        topCardTitle: "Quick Discovery",
-        topCardText: "Students quickly discover what they enjoy and where they naturally excel through lab activities.",
-        midCardTitle: "Talent Discovery",
+          "Nava Chaithanya Bharathi School (NCBS), established in 2023, is an English medium school in P and T Colony, Madanapalle. The school serves children from Playgroup and Nursery to Grade VIII with a focus on Multiple Intelligence, activity-based learning, individual attention, and holistic development.",
+        topImage: "/student.webp",
+        bottomImage: "/class.avif",
+        topCardTitle: "Individual Attention",
+        topCardText: "We focus on individual learning speeds and avoid rote memorisation.",
+        midCardTitle: "Activity-Based Learning",
         midCardText:
-          "Our labs act as a mirror for your child’s potential by revealing early strengths in logic and creativity.",
+          "Children learn through observation, practice, creativity, movement, and meaningful classroom experiences.",
         topCardBg: "rgba(18, 61, 109, 0.14)",
         topTitleColor: "text-[var(--brand-accent)]",
         topTextColor: "text-slate-700",
@@ -42,17 +43,17 @@ export default function AcademicPrograms() {
         midTextColor: "text-slate-700",
       },
       {
-        phase: "Understand",
-        title: "2. Interactive Classes",
+        phase: "Methodology",
+        title: "2. Multiple Intelligence",
         description:
-          "Mentors then connect those practical experiences to theory in our smart classrooms, turning curiosity into deep academic knowledge.",
-        topImage: "/classroom2.jpeg",
-        bottomImage: "/classroom.jpeg",
-        topCardTitle: "Concept Clarity",
-        topCardText: "Every concept is connected to something students have already experienced with their own hands.",
-        midCardTitle: "Live Discussion",
+          "NCBS combines multiple intelligence and activity-based learning so each child can grow at a comfortable pace in a joyful environment.",
+        topImage: "/room.webp",
+        bottomImage: "/hero.avif",
+        topCardTitle: "Brain Gym",
+        topCardText: "Exercises for attention and memory for ages 3–9.",
+        midCardTitle: "Sensorial Training",
         midCardText:
-          "Students actively question, explain, and collaborate so understanding becomes durable and exam-ready.",
+          "Hands-on learning for pre-primary children through touch, sight, sound, movement, and observation.",
         topCardBg: "rgba(212, 161, 31, 0.3)",
         topTitleColor: "text-[var(--brand-primary)]",
         topTextColor: "text-slate-700",
@@ -61,17 +62,17 @@ export default function AcademicPrograms() {
         midTextColor: "text-slate-700",
       },
       {
-        phase: "Excel",
-        title: "3. Academic Excellence",
+        phase: "Why Choose Us",
+        title: "3. Supportive Schooling",
         description:
-          "Because they have seen it and lived it, students approach assessments with confidence, clarity, and complete understanding.",
-        topImage: "/students.jpeg",
+          "The school offers AC classrooms, safe transport, smartboards where suitable, regular evaluation, and a secure child-safe campus environment.",
+        topImage: "/test.png",
         bottomImage: "/exam.jpeg",
-        topCardTitle: "Exam Confidence",
-        topCardText: "Concept-backed preparation helps students perform calmly under pressure.",
-        midCardTitle: "Future Ready",
+        topCardTitle: "TaRL Approach",
+        topCardText: "Teaching at the Right Level helps children strengthen Math basics.",
+        midCardTitle: "Holistic Development",
         midCardText:
-          "From classroom mastery to competitive exams, students grow with a strong base and sharp thinking.",
+          "Creative schooling approaches support confidence, curiosity, and joyful discovery.",
         topCardBg: "rgba(18, 61, 109, 0.16)",
         topTitleColor: "text-[var(--brand-accent)]",
         topTextColor: "text-slate-700",
@@ -140,7 +141,7 @@ export default function AcademicPrograms() {
         <div className="flex flex-col justify-center space-y-8">
           <div>
             <h2 className="text-3xl font-black leading-[0.95] tracking-tight text-[var(--brand-primary)] sm:text-5xl md:text-6xl lg:text-7xl">
-              New Way of Learning
+              About NCBS
             </h2>
 
             <div className="mt-5 flex flex-wrap items-center gap-2 text-sm font-bold uppercase tracking-[0.2em] text-slate-400 sm:text-base">
@@ -182,6 +183,9 @@ export default function AcademicPrograms() {
                         className={`hidden text-lg font-extrabold sm:block sm:text-xl ${isActive ? "text-slate-900" : "text-slate-700"}`}
                         delayStep={24}
                       />
+                        {index === 0 && (
+                          <p className="mt-2 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--brand-primary)]">{schoolInfo.established}</p>
+                        )}
                       <p className="mt-2 block text-sm leading-relaxed text-slate-600 sm:hidden">
                         {step.description}
                       </p>
@@ -227,7 +231,7 @@ export default function AcademicPrograms() {
           <div className="flex flex-col gap-4 sm:gap-6">
             <article className="relative min-h-[320px] flex-1 overflow-hidden rounded-[2rem] bg-[var(--brand-accent)]/8 shadow-xl sm:min-h-[400px] sm:rounded-[2.5rem]">
               <div key={current.topImage} className="absolute inset-0 animate-wipe-up">
-                <Image src={current.topImage} alt="Practical Labs" fill className="object-cover" />
+                <Image src={current.topImage} alt="NCBS classroom learning" fill className="object-cover" />
               </div>
             </article>
 
@@ -278,6 +282,9 @@ export default function AcademicPrograms() {
                   delayStep={14}
                   baseDelay={80}
                 />
+                {activeStep === 2 && (
+                  <p className="mt-4 text-sm font-semibold text-slate-700">We focus on individual learning speeds and avoid rote memorisation.</p>
+                )}
               </div>
             </article>
 

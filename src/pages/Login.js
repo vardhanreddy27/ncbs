@@ -5,11 +5,11 @@ function Login() {
   return (
     <div className="bg-gray-100 min-h-screen flex flex-col">
       <Link href="/">
-        <h1 id="title" className="font-bold text-4xl pl-4 pt-4 logo">EduAdapt</h1>
+        <h1 id="title" className="font-bold text-4xl pl-4 pt-4 logo">NCBS</h1>
       </Link>
       <div className="flex justify-center w-full">
         <div className="bg-white mb-28 mt-20 pb-8 p-6 rounded-lg shadow-lg w-full max-w-md">
-          <h2 className="text-2xl font-bold mb-2 text-gray-900 text-center">Login to EduAdapt</h2>
+          <h2 className="text-2xl font-bold mb-2 text-gray-900 text-center">Login to NCBS</h2>
           <form className="space-y-4">
             <div>
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>

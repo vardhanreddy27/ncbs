@@ -6,19 +6,19 @@ export default function Document() {
       <Head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="description" content="Quantum Heights School in Kadapa: IIT, NEET, and Civil Services Foundation. Best English Medium School for holistic education, STEM, and competitive exam preparation." />
-        <meta name="keywords" content="Quantum Heights, Kadapa, School, IIT Foundation, NEET Foundation, Civil Services, English Medium, STEM, Best School Kadapa, Admissions, Smart School" />
-        <meta name="author" content="Quantum Heights School Kadapa" />
-        <meta property="og:title" content="Quantum Heights School Kadapa" />
-        <meta property="og:description" content="IIT, NEET, and Civil Services Foundation School in Kadapa. Admissions Open. Best-in-class faculty, STEM labs, and smart learning." />
+        <meta name="description" content="Nava Chaithanya Bharathi School (NCBS), Madanapalle, offers Playgroup, Nursery to Grade VIII with Multiple Intelligence, activity-based learning, AC classrooms, safe transport, Brain Gym, Sensorial Training, and TaRL-based Math support." />
+        <meta name="keywords" content="NCBS Madanapalle, Nava Chaithanya Bharathi School, school in Madanapalle, playgroup in Madanapalle, nursery school Madanapalle, primary school Madanapalle, activity based learning school, AC classrooms school Madanapalle" />
+        <meta name="author" content="Nava Chaithanya Bharathi School" />
+        <meta property="og:title" content="Nava Chaithanya Bharathi School | NCBS Madanapalle" />
+        <meta property="og:description" content="Nava Chaithanya Bharathi School (NCBS), Madanapalle, offers Playgroup, Nursery to Grade VIII with Multiple Intelligence, activity-based learning, AC classrooms, safe transport, Brain Gym, Sensorial Training, and TaRL-based Math support." />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/logo.jpg" />
-        <meta property="og:url" content="https://quantumheights.in" />
+        <meta property="og:image" content="/logo.png" />
+        <meta property="og:url" content="https://ncbsmadanapalle.in" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Quantum Heights School Kadapa" />
-        <meta name="twitter:description" content="IIT, NEET, and Civil Services Foundation School in Kadapa. Admissions Open. Best-in-class faculty, STEM labs, and smart learning." />
-        <meta name="twitter:image" content="/logo.jpg" />
-        <link rel="icon" href="/logo.jpg" />
+        <meta name="twitter:title" content="Nava Chaithanya Bharathi School | NCBS Madanapalle" />
+        <meta name="twitter:description" content="Nava Chaithanya Bharathi School (NCBS), Madanapalle, offers Playgroup, Nursery to Grade VIII with Multiple Intelligence, activity-based learning, AC classrooms, safe transport, Brain Gym, Sensorial Training, and TaRL-based Math support." />
+        <meta name="twitter:image" content="/logo.png" />
+        <link rel="icon" href="/logo.png" />
       </Head>
       <body>
         <Main />

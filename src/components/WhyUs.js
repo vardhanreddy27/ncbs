@@ -1,80 +1,158 @@
-import SectionHeading from "./SectionHeading";
-import { BookOpen, Stethoscope, Landmark } from "lucide-react";
+import React from 'react';
+import Image from 'next/image';
+import { schoolInfo } from '@/constants/schoolData';
+import { BrainCircuit, Bus, BookOpen, BarChart3, Languages, ClipboardCheck, Layers3, ShieldCheck } from 'lucide-react';
 
-const programs = [
+const ncbsFeatures = [
   {
-    title: "IIT–JEE Foundation",
+    title: 'Individual Learning Attention',
+    description: 'We focus on individual learning speeds and avoid rote memorisation.',
+    icon: BrainCircuit,
+    iconColor: 'text-[var(--brand-primary)]',
+    bgColor: 'bg-[var(--brand-secondary)]/14',
+  },
+  {
+    title: 'Activity-Based Learning',
+    description: 'Multiple Intelligence learning supports movement, observation, practice, and creativity.',
     icon: BookOpen,
-    text: "Strong focus on Maths & Science fundamentals with concept-based learning aligned to competitive patterns.",
-    buttonStyle: "bg-[var(--brand-accent)]/10 text-[var(--brand-accent)]",
-    iconWrapStyle: "bg-[var(--brand-secondary)]/12 text-[var(--brand-primary)]",
+    iconColor: 'text-[var(--brand-primary)]',
+    bgColor: 'bg-[var(--brand-accent)]/10',
   },
   {
-    title: "Civil Services Exposure",
-    icon: Landmark,
-    text: "Building general knowledge and thinking ability through early awareness of UPSC and government career paths.",
-    buttonStyle: "bg-[var(--brand-primary)] text-white", // Highlighted state
-    iconWrapStyle: "bg-[var(--brand-secondary)]/14 text-[var(--brand-primary)]",
-    highlight: true,
+    title: 'Brain Gym & Sensorial Training',
+    description: 'Attention, memory, and sensory development are supported through age-appropriate activities.',
+    icon: BarChart3,
+    iconColor: 'text-[var(--brand-primary)]',
+    bgColor: 'bg-[var(--brand-accent)]/12',
   },
   {
-    title: "NEET Foundation",
-    icon: Stethoscope,
-    text: "Early preparation in Biology and core science concepts with a focus on clarity and entrance readiness.",
-    buttonStyle: "bg-[var(--brand-accent)]/10 text-[var(--brand-accent)]",
-    iconWrapStyle: "bg-[var(--brand-secondary)]/12 text-[var(--brand-primary)]",
+    title: 'TaRL for Math Basics',
+    description: 'Teaching at the Right Level helps children build stronger numeracy foundations step by step.',
+    icon: ClipboardCheck,
+    iconColor: 'text-[var(--brand-primary)]',
+    bgColor: 'bg-[var(--brand-secondary)]/16',
+  },
+  {
+    title: 'AC Classrooms',
+    description: 'Comfortable air-conditioned classrooms support focused learning throughout the school day.',
+    icon: Layers3,
+    iconColor: 'text-[var(--brand-primary)]',
+    bgColor: 'bg-[var(--brand-secondary)]/16',
+  },
+  {
+    title: 'Safe Transport Facility',
+    description: 'A safe and convenient transport facility with parent-friendly communication.',
+    icon: ShieldCheck,
+    iconColor: 'text-[var(--brand-primary)]',
+    bgColor: 'bg-[var(--brand-accent)]/10',
   },
 ];
 
-export default function SpecializedPrograms() {
+export default function WhyChooseNCBS() {
   return (
-    <section id="programs" className="bg-[#fafdfff7] py-20"> {/* For Our Specialized Programs */}
-      <div className="mx-auto px-4 sm:px-6 lg:px-12">
-        <SectionHeading
-          eyebrow="Our Specialized Programs"
-          eyebrowBig
-          title=""
-          subtitle={
-            <>
-Specialized coaching and focused mentorship designed to launch successful careers in       
-             Engineering, Medicine, and Public Service.
-             Empowering the Next Generation of Achievers
-            </>
-          }
-        />
+    <>
+      <section id="why-us" className="relative overflow-hidden bg-white py-20 sm:py-24">
+        <div className="pointer-events-none absolute -right-24 top-0 h-64 w-64 rounded-full bg-[var(--brand-secondary)]/15 blur-2xl" />
 
-        <div className="mt-16 grid gap-8 md:grid-cols-3">
-          {programs.map((item) => (
-            <div
-              key={item.title}
-              className={`relative flex flex-col items-center rounded-[2.5rem] bg-white p-10 text-center transition-all shadow-sm ${
-                item.highlight ? "border-2 border-[var(--brand-primary)]" : "border border-[var(--brand-secondary)]/15"
-              }`}
-            >
-              {/* Icon Container */}
-              <div className={`mb-6 flex h-20 w-20 items-center justify-center rounded-2xl ${item.iconWrapStyle}`}>
-                <item.icon size={40} strokeWidth={1.5} />
+        <div className="mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid items-center gap-12 lg:grid-cols-[0.88fr_1.12fr] lg:gap-16">
+            <div className="relative mx-auto w-full">
+              <div className="relative overflow-hidden">
+                <div className="relative h-[560px] overflow-hidden" style={{ borderRadius: '2rem' }}>
+                  <Image
+                    src="/uniform.png"
+                    alt="NCBS classroom environment"
+                    fill
+                    className="object-cover"
+                    priority
+                  />
+                </div>
               </div>
 
-              {/* Content */}
-              <h3 className="mb-4 text-2xl font-bold text-slate-900 leading-tight">
-                {item.title}
-              </h3>
-              <p className="mb-10 text-slate-600 text-sm leading-relaxed">
-                {item.text}
+              <div className="absolute -top-3 -left-3 h-5 w-5 rounded-full bg-[var(--brand-primary)]/25" />
+            </div>
+
+            <div className="relative z-10">
+              <h2 className="mt-4 text-3xl font-extrabold leading-tight text-[var(--brand-primary)] md:text-4xl">
+                Why Choose NCBS for Your Child?
+              </h2>
+              <p className="mt-4 text-base text-slate-600 md:text-lg">
+                Nava Chaithanya Bharathi School is built around individual attention, creative schooling approaches, and steady child progress.
               </p>
 
-              {/* Read More Button */}
-              <button
-                className={`mt-auto w-full py-3 rounded-full text-sm font-semibold flex items-center justify-center gap-2 transition-opacity hover:opacity-90 ${item.buttonStyle}`}
-              >
-                Read More
-                <span className="text-xs">→</span>
-              </button>
+              <div className="mt-3 grid gap-5 sm:grid-cols-2">
+                {ncbsFeatures.map((item) => (
+                  <article
+                    key={item.title}
+                    className="rounded-[1.7rem] border border-[var(--brand-secondary)]/20 bg-[#fafdfff7] p-5 shadow-sm"
+                  >
+                    <div className={`mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl ${item.bgColor}`}>
+                      <item.icon className={item.iconColor} size={28} strokeWidth={1.8} />
+                    </div>
+
+                    <h4 className="text-xl font-extrabold leading-tight text-slate-900 sm:text-[1.35rem]">
+                      {item.title}
+                    </h4>
+                    <p className="mt-2 text-sm leading-relaxed text-slate-600">
+                      {item.description}
+                    </p>
+                  </article>
+                ))}
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative overflow-hidden bg-[#f9f7f4]">
+        <div className="absolute top-0 left-0 h-40 w-64 rounded-br-[100px] bg-[var(--brand-primary)]" />
+        <div className="absolute top-10 right-10 grid grid-cols-6 gap-2 opacity-60">
+          {[...Array(24)].map((_, i) => (
+            <div key={i} className="h-1.5 w-1.5 rounded-full bg-[var(--brand-primary)]" />
           ))}
         </div>
-      </div>
-    </section>
+
+        <div className="relative mx-auto grid max-w-7xl items-end gap-12 px-6  pt-10 lg:grid-cols-2 lg:px-8">
+          <div className="flex justify-center lg:justify-start">
+            <div className="relative w-full max-w-[420px] lg:max-w-[520px]">
+              <div className="absolute bottom-2 left-0 right-0 mx-auto h-10 w-60 rounded-full bg-black/10 blur-xl" />
+              <div className="relative h-[380px] w-full overflow-hidden rounded-xl sm:h-[420px] lg:h-[450px]">
+                <Image
+                  src="/girl.png"
+                  alt="NCBS student"
+                  fill
+                  className="object-cover object-bottom"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="flex max-w-xl flex-col justify-center lg:ml-auto">
+            <h2 className="text-4xl font-extrabold leading-tight text-[#1f2a44] md:text-5xl lg:text-6xl">
+              Admissions Open at <span className="text-[var(--brand-primary)]">NCBS</span>
+            </h2>
+
+            <div className="mt-2 text-sm text-gray-700">
+              <div className="flex items-center gap-2">
+                📍
+                <span className="font-medium">{schoolInfo.location}</span>
+              </div>
+
+              <div className="mb-2 flex items-center gap-2">
+                📞
+                <span className="font-medium">{schoolInfo.phones[0]} | {schoolInfo.phones[1]}</span>
+              </div>
+            </div>
+
+            <a href={schoolInfo.phoneLinks[0]}>
+              <button className="mt-4 mb-2 w-1/2 rounded-lg bg-[var(--brand-primary)] px-8 py-3 text-lg font-semibold text-white shadow-md transition hover:scale-105 hover:shadow-lg">
+                ENROLL NOW
+              </button>
+            </a>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }

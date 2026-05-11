@@ -14,18 +14,28 @@ import {
 import { MdAutoGraph, MdEmail } from "react-icons/md";
 
 export const schoolInfo = {
-  name: "QUANTUM HEIGHTS School",
-  tagline: "Quality Education • Smart Learning",
+  name: "Nava Chaithanya Bharathi School",
+  shortName: "NCBS",
+  tagline: "Shaping Learning Minds through Individual Empowerment.",
   logoTagline: "English Medium School",
-  logoSubtagline: "IIT-JEE | NEET | Civil Services Foundation School",
-  location: "Prakash Nagar, Kadapa",
-  phones: ["+91 93908 98250", "+91 63035 07136"],
+  logoSubtagline: "Playgroup to Grade VIII",
+  established: "Est. 2023",
+  location: "Door No. 2-422-3-2/B, P and T Colony, Near Hanuman Temple, Madanapalle, Andhra Pradesh 517325",
+  addressShort: "P and T Colony, Madanapalle",
+  phones: ["+91 74161 43373", "+91 91604 37152"],
+  phoneLinks: ["tel:+917416143373", "tel:+919160437152"],
+  email: "navachaithanyabharathischool@gmail.com",
+  emailLink: "mailto:navachaithanyabharathischool@gmail.com",
+  hours: "Monday – Saturday: 9:00 AM – 5:00 PM",
+  principal: "Principal Manasa Padmanabhuni",
+  principalVision: "Fostering holistic development and creative schooling approaches.",
+  whatsappLink: "https://wa.me/917416143373",
 };
 
 export const brand = {
-  primary: "#8c1d2c",
-  secondary: "#d4a11f",
-  accent: "#123d6d",
+  primary: "#0d567f",
+  secondary: "#74a6bf",
+  accent: "#1f6f99",
 };
 
 export const navLinks = [
@@ -40,105 +50,105 @@ export const navLinks = [
 export const heroCards = [
   {
     title: "STEM Labs",
-    color: "bg-[#d4a11f]/15",
+    color: "bg-[#74a6bf]/20",
   },
   {
     title: "Guided Learning",
-    color: "bg-[#8c1d2c]/10",
+    color: "bg-[#0d567f]/12",
   },
   {
     title: "Campus Culture",
-    color: "bg-[#123d6d]/10",
+    color: "bg-[#1f6f99]/12",
   },
 ];
 
 export const programs = [
   {
-    title: "Foundational School",
-    subtitle: "Grades 1 to 5",
+    title: "Playgroup & Nursery",
+    subtitle: "Early years",
     description:
-      "Activity-led classrooms that build literacy, numeracy, confidence, and disciplined study habits.",
+      "Activity-led classrooms that build literacy, numeracy, confidence, and joyful discovery.",
     icon: FaBookOpen,
   },
   {
-    title: "Middle School Excellence",
-    subtitle: "Grades 6 to 8",
+    title: "Primary Grades",
+    subtitle: "Grade I to V",
     description:
-      "Project-based learning in Science and Mathematics with communication and leadership development.",
+      "Multiple Intelligence and activity-based learning that supports individual attention and strong basics.",
     icon: FaFlask,
   },
   {
-    title: "Senior School + Career Tracks",
-    subtitle: "Grades 9 to 12",
+    title: "Middle School",
+    subtitle: "Grade VI to VIII",
     description:
-      "Board-focused academics with IIT-JEE, NEET, and Civil Services Foundation guidance pathways.",
+      "Concept clarity, regular evaluation, and progress tracking with a parent-friendly learning environment.",
     icon: FaUserGraduate,
   },
 ];
 
 export const highlights = [
   {
-    title: "Experienced Faculty",
-    text: "Mentors with strong subject depth and student-friendly classroom teaching.",
+    title: "Individual Learning Attention",
+    text: "We focus on individual learning speeds and avoid rote memorisation.",
     icon: FaChalkboardTeacher,
   },
   {
-    title: "Personalized Attention",
-    text: "Low student-teacher ratio with periodic parent-teacher mentoring support.",
+    title: "Activity-Based Learning",
+    text: "Multiple Intelligence learning through movement, observation, practice, and creativity.",
     icon: FaBullseye,
   },
   {
-    title: "Proven Results",
-    text: "Consistent board outcomes and measurable student growth year after year.",
+    title: "Holistic Development",
+    text: "Creative schooling approaches that support confidence, curiosity, and overall growth.",
     icon: FaTrophy,
   },
   {
-    title: "Smart Learning Methods",
-    text: "Assessment analytics, revision maps, and concept reinforcement cycles.",
+    title: "Progress Tracking",
+    text: "Regular evaluation and child progress tracking help families stay informed.",
     icon: MdAutoGraph,
   },
 ];
 
 export const examTraining = [
   {
-    title: "IIT-JEE Preparation",
+    title: "Brain Gym",
     detail:
-      "Strong Physics, Chemistry, and Mathematics pipeline with concept classes, drills, and rank-oriented mock tests.",
+      "Exercises designed to improve attention, memory, coordination, and learning readiness for children aged 3–9.",
   },
   {
-    title: "NEET Preparation",
+    title: "Map Pointing & State Symbols",
     detail:
-      "Biology-first strategy with chapter planning, medical-entrance practice series, and mentor follow-up.",
+      "Interactive geography activities using puzzles, maps, landmarks, and state symbols to make learning visual and playful.",
   },
   {
-    title: "Civil Services Foundation",
+    title: "TaRL Approach",
     detail:
-      "Early training in current affairs, polity, writing, and analytical thinking for long-term UPSC direction.",
+      "Teaching at the Right Level helps children strengthen Math basics and learn according to their current understanding.",
   },
 ];
 
 export const stats = [
-  { value: "1000+", label: "Students Trained" },
-  { value: "95%", label: "Success Rate" },
-  { value: "120+", label: "Top Rankers" },
-  { value: "15+", label: "Years of Excellence" },
+  { value: "2023", label: "Established" },
+  { value: "VIII", label: "Highest Grade" },
+  { value: "2", label: "Contact Numbers" },
+  { value: "1", label: "Focused Campus" },
 ];
 
 export const testimonials = [
   {
-    name: "A. Meghana",
-    role: "Parent, Grade 10",
-    quote: "The discipline and personal attention transformed my child into a confident, focused learner.",
+    name: "Parent Feedback",
+    role: "NCBS Families",
+    quote: "The school balances individual attention, creativity, and steady progress in a reassuring way.",
   },
   {
-    name: "Rohit Varma",
-    role: "Student, Grade 12",
-    quote: "Teachers make difficult concepts simple, and academic guidance is consistently strong.",
+    name: "Student Growth",
+    role: "NCBS Learners",
+    quote: "Children learn through activities, movement, and observation rather than memorising blindly.",
   },
   {
-    name: "S. Harini",
-    role: "Parent, Grade 7",
-    quote: "The school balances academics and values beautifully. We saw measurable growth in months.",
+    name: "Holistic Schooling",
+    role: "NCBS Community",
+    quote: "Creative schooling approaches and regular communication make the admissions journey easy for parents.",
   },
 ];
 

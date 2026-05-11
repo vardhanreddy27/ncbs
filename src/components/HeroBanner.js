@@ -24,12 +24,12 @@ export default function HeroBanner() {
         <div className="overflow-hidden  ">
           <div className="relative min-h-[600px] sm:min-h-[700px] lg:min-h-screen">
             <Image
-              src="/herobg.jpg"
-              alt="Happy children learning"
+              src="/hero.avif"
+              alt="NCBS children learning"
               fill
               priority
               sizes="100vw"
-              className="object-cover object-[center_top]"
+              className="object-cover object-[center_14%]"
             />
             <div className="absolute inset-0 bg-[linear-gradient(0deg,rgba(248,251,255,0.96)_8%,rgba(248,251,255,0.88)_46%,rgba(248,251,255,0.22)_74%,rgba(248,251,255,0)_100%)] sm:bg-[linear-gradient(100deg,rgba(248,251,255,0.95)_0%,rgba(248,251,255,0.9)_40%,rgba(248,251,255,0.2)_68%,rgba(248,251,255,0)_100%)]" />
 
@@ -40,26 +40,26 @@ export default function HeroBanner() {
                 </span>
 
                 <h1 className="mt-5 text-3xl font-black leading-tight text-p text-[var(--brand-primary)]  sm:text-4xl lg:text-5xl">
-                  Where Learning Comes to Life
+                  {schoolInfo.tagline}
                 </h1>
 
                 <p className="mt-4 text-base text-slate-900 sm:hidden">
-                  Hands-on learning and smart classrooms that make every child future-ready.
+                  An activity-based English medium school in Madanapalle for Playgroup, Nursery to Grade VIII.
                 </p>
                 <p className="mt-4 hidden text-base text-slate-900 sm:block sm:text-lg">
-                  Beyond the textbook, we integrate hands-on labs and real-world problem solving into every grade level. From building foundational literacy in early years to mastering advanced analytical thinking in secondary school, our education model is designed to make students future-ready, not just exam-ready.
+                  At NCBS, we focus on individual learning speeds and avoid rote memorisation through Multiple Intelligence learning, Brain Gym, Sensorial Training, TaRL-based Math support, and creative classroom experiences.
                 </p>
 
                 <div className="mt-6 grid grid-cols-2 gap-3 sm:mt-7 sm:flex sm:flex-row sm:flex-wrap sm:gap-3">
                   <a
-                    href="#Programs"
+                    href="#academics"
                     className="w-full rounded-full border border-[var(--brand-accent)]/30 bg-white px-3 py-3 text-center text-xs font-bold text-[var(--brand-accent)] sm:w-auto sm:px-6 sm:text-sm"
                   >
-                    Explore Programs
+                    About NCBS
                   </a>
                   <a
                     href="#contact"
-                    className="w-full rounded-full bg-[var(--brand-primary)] px-3 py-3 text-center text-xs font-bold text-white shadow-[0_10px_24px_rgba(140,29,44,0.25)] sm:w-auto sm:px-6 sm:text-sm"
+                    className="w-full rounded-full bg-[var(--brand-primary)] px-3 py-3 text-center text-xs font-bold text-white shadow-[0_10px_24px_rgba(13,86,127,0.25)] sm:w-auto sm:px-6 sm:text-sm"
 
                   >
                     Contact for Admission
@@ -73,32 +73,32 @@ export default function HeroBanner() {
         <div className="relative z-20 mx-4 mt-4 grid gap-4 pb-8 sm:mx-6 sm:-mt-40 md:grid-cols-2 md:gap-5 lg:mx-8 lg:-mt-56 lg:grid-cols-3">
           {[
             {
-              title: "PRE SCHOOL",
-              subtitle: "Nursery, L.K.G & U.K.G",
-              tone: "bg-[linear-gradient(180deg,#b84c3f_0%,#a63d32_100%)]",
+                title: "Playgroup & Nursery",
+                subtitle: "Early years foundation",
+              tone: "bg-[linear-gradient(180deg,#2f7ea7_0%,#0d567f_100%)]",
               img: "/englishlab.jpg",
               video: "/englishlabvideo.mov",
-              alt: "Preschool activity class",
+                alt: "Pre-primary learning activity",
               objPos: "object-top",
               mediaShift: "mt-2",
             },
             {
-              title: "PRIMARY SCHOOL",
-              subtitle: "Grade I to V",
-              tone: "bg-[linear-gradient(180deg,#1e4a8b_0%,#123d6d_100%)]",
-              img: "/Mathlab.jpg",
-              video: "/mathslab.mov",
-              alt: "Primary school math lab",
+                title: "Primary Learning",
+                subtitle: "Grades I to V",
+              tone: "bg-[linear-gradient(180deg,#1f6f99_0%,#144f75_100%)]",
+              img: "/pl.webp",
+              video: "/mathslab.mp4",
+                alt: "Primary learning activity",
               objPos: "object-center",
               mediaShift: "",
             },
             {
-              title: "HIGH SCHOOL",
-              subtitle: "Grade VI to X",
-              tone: "bg-[linear-gradient(180deg,#c9a22d_0%,#b89424_100%)]",
+                title: "Upper Primary",
+                subtitle: "Grades VI to VIII",
+              tone: "bg-[linear-gradient(180deg,#89b8ce_0%,#74a6bf_100%)]",
               img: "/studentsinclass.jpg",
               video: "/studentsinclassvideo.mov",
-              alt: "High school students in class",
+                alt: "Upper primary classroom learning",
               objPos: "object-center",
               mediaShift: "",
             },

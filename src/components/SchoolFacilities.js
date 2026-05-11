@@ -1,98 +1,56 @@
 import Image from "next/image";
-import {
-  Calculator,
-  Atom,
-  FlaskConical,
-  Dna,
-  Bot,
-  Monitor,
-  Volleyball,
-  BookOpen,
-  Gamepad2,
-  Bus,
-  Presentation
-} from "lucide-react";
+import { Brain, Map, Hand, Sigma, Wind, Bus, Languages } from "lucide-react";
 
 const facilities = [
   {
-    title: "Maths Lab",
-    img: "https://www.lalalajpatraischool.com/img/LabMaths1.jpeg",
-    desc: "Hands-on learning for mathematics.",
-    icon: Calculator
+    title: "Brain Gym",
+    img: "/activity.jpg",
+    desc: "Exercises designed to improve attention, memory, coordination, and learning readiness for children aged 3–9.",
+    icon: Brain,
   },
   {
-    title: "Physics Lab",
-    img: "https://www.afshebbal.ac.in/userfiles/file/Ph%201.JPG",
-    desc: "Explore the laws of nature.",
-    icon: Atom
+    title: "Map Pointing & State Symbols",
+    img: "/map.jpg",
+    desc: "Interactive geography activities using puzzles, maps, landmarks, and state symbols to make learning visual and playful.",
+    icon: Map,
   },
   {
-    title: "Chemistry Lab",
-    img: "https://vspkinternational.edu.in/content/IMG-20240930-WA0077.jpg",
-    desc: "Safe, modern chemistry experiments.",
-    icon: FlaskConical
+    title: "Sensorial Training",
+    img: "/sec.jpg",
+    desc: "Hands-on pre-primary activities that help children learn through touch, sight, sound, movement, and observation.",
+    icon: Hand,
   },
   {
-    title: "Biology Lab",
-    img: "https://www.edufab.in/wp-content/uploads/2024/07/Biology-lab.jpg",
-    desc: "Discover the science of life.",
-    icon: Dna
+    title: "TaRL Approach",
+    img: "/ncbs/fundamental-duties.jpg",
+    desc: "Teaching at the Right Level helps children strengthen Math basics and learn according to their current understanding.",
+    icon: Sigma,
   },
   {
-    title: "Robotics / Innovation Lab",
-    img: "https://cloud9.shauryasoft.com/media/contentpage_178_115_2.jpg?638041330024674109?spPDV",
-    desc: "Build, code, and innovate.",
-    icon: Bot
+    title: "AC Classrooms",
+    img: "/class.avif",
+    desc: "Comfortable air-conditioned classrooms that support focused learning throughout the school day.",
+    icon: Wind,
   },
   {
-    title: "Computer Lab",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeUCGIeePH-W-vq2j11yMKY8kLKL-HgFx_4Q&s",
-    desc: "Digital skills for the future.",
-    icon: Monitor
+    title: "Safe Transport Facility",
+    img: "/transport.png",
+    desc: "A safe and convenient transport facility for students with parent-friendly communication.",
+    icon: Bus,
   },
   {
-    title: "Play Ground",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHtafjeZMs2ERC0G3ovoBil-t0ARP7WT5URQ&s",
-    desc: "Outdoor fun and fitness.",
-    icon: Volleyball
+    title: "English Medium Environment",
+    img: "/pl.webp",
+    desc: "English medium learning environment with regular evaluation and child progress tracking.",
+    icon: Languages,
   },
-  {
-    title: "Library",
-    img: "https://www.al.com/resizer/v2/4SU5I25YWNABLOEM43OPS63UK4.JPG?auth=fe2efbcd118d7f8f895c4e63d773888906f577035af9fda73a8569ce487adffe&width=1280&smart=true&quality=90",
-    desc: "A world of books and knowledge.",
-    icon: BookOpen
-  },
-  {
-    title: "Volleyball Court",
-    img: "https://dpsbopal-ahd.edu.in/Uploads/vollyball_201511020512378937.jpg",
-    desc: "Team spirit and sportsmanship.",
-    icon: Volleyball
-  },
-  {
-    title: "Indoor Games",
-    img: "https://strawberryfieldshighschool.com/wp-content/uploads/2019/07/IMG-20190718-WA0035.jpg",
-    desc: "Chess, carroms, and more.",
-    icon: Gamepad2
-  },
-  {
-    title: "Bus Facility with GPS Tracking",
-    img: "https://swarajya.gumlet.io/swarajya/2025-11-05/5g1ji9ar/schooltransport.jpg?w=610&q=75&compress=true&format=auto",
-    desc: "Safe, real-time tracked transport.",
-    icon: Bus
-  },
-  {
-    title: "Conference Hall",
-    img: "https://twss.edu.in/wp-content/uploads/2024/12/Conference-Hall-Banner-1024x683.webp",
-    desc: "Meetings, seminars, and events.",
-    icon: Presentation
-  }
 ];
 
 export default function SchoolFacilities() {
   return (
     <section className="mx-auto max-w-8xl px-4 py-12 sm:px-6 lg:px-8">
-      <h2 className="mb-20 py-8 text-3xl font-extrabold text-[var(--brand-primary)] sm:text-4xl text-center">
-        Our School Facilities
+      <h2 className="mb-20 py-8 text-center text-3xl font-extrabold text-[var(--brand-primary)] sm:text-4xl">
+        NCBS Features
       </h2>
 
       <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
@@ -100,35 +58,27 @@ export default function SchoolFacilities() {
           const Icon = f.icon;
 
           return (
-            <div
-              key={f.title}
-              className="group rounded-2xl bg-white shadow-lg overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
-            >
+            <div key={f.title} className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl">
               <div className="relative h-40 w-full">
                 <Image
                   src={f.img}
                   alt={f.title}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="object-cover transition-transform duration-300 group-hover:scale-105"
                   sizes="(max-width: 768px) 100vw, 33vw"
                   priority={i < 3}
                 />
               </div>
 
-              <div className="p-4 flex-1 flex flex-col justify-between">
+              <div className="flex flex-1 flex-col justify-between p-4">
                 <div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-1">
-                    {f.title}
-                  </h3>
-                  <p className="text-sm text-slate-600 mb-3">
-                    {f.desc}
-                  </p>
+                  <h3 className="mb-1 text-lg font-bold text-slate-900">{f.title}</h3>
+                  <p className="mb-3 text-sm text-slate-600">{f.desc}</p>
                 </div>
 
-                {/* ICON AREA */}
                 <div className="flex justify-end">
-                  <div className="p-2 rounded-full bg-[var(--brand-primary)]/10 group-hover:bg-[var(--brand-primary)] transition">
-                    <Icon className="w-5 h-5 text-[var(--brand-primary)] group-hover:text-white" />
+                  <div className="rounded-full bg-[var(--brand-primary)]/10 p-2 transition group-hover:bg-[var(--brand-primary)]">
+                    <Icon className="h-5 w-5 text-[var(--brand-primary)] transition group-hover:text-white" />
                   </div>
                 </div>
               </div>

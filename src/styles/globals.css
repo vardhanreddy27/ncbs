@@ -4,11 +4,11 @@
 
 
 :root {
-  --background: #f8fafc;
-  --foreground: #0f172a;
-  --brand-primary: #8c1d2c;
-  --brand-secondary: #d4a11f;
-  --brand-accent: #123d6d;
+  --background: #f4f7fa;
+  --foreground: #0f2f44;
+  --brand-primary: #0d567f;
+  --brand-secondary: #74a6bf;
+  --brand-accent: #1f6f99;
 }
 
 html {
