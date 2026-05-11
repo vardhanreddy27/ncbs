@@ -125,8 +125,17 @@ export default function HeroBanner() {
                 <p className="text-base font-extrabold uppercase tracking-wide sm:text-lg">{item.title}</p>
               </div>
 
-              <div className="relative overflow-hidden ">
-                <div className="relative overflow-hidden" style={{clipPath: "polygon(0 4%, 2% 3%, 4% 4%, 6% 3%, 8% 4%, 10% 3%, 12% 4%, 14% 3%, 16% 4%, 18% 3%, 20% 4%, 22% 3%, 24% 4%, 26% 3%, 28% 4%, 30% 3%, 32% 4%, 34% 3%, 36% 4%, 38% 3%, 40% 4%, 42% 3%, 44% 4%, 46% 3%, 48% 4%, 50% 3%, 52% 4%, 54% 3%, 56% 4%, 58% 3%, 60% 4%, 62% 3%, 64% 4%, 66% 3%, 68% 4%, 70% 3%, 72% 4%, 74% 3%, 76% 4%, 78% 3%, 80% 4%, 82% 3%, 84% 4%, 86% 3%, 88% 4%, 90% 3%, 92% 4%, 94% 3%, 96% 4%, 98% 3%, 100% 4%, 100% 96%, 98% 97%, 96% 96%, 94% 97%, 92% 96%, 90% 97%, 88% 96%, 86% 97%, 84% 96%, 82% 97%, 80% 96%, 78% 97%, 76% 96%, 74% 97%, 72% 96%, 70% 97%, 68% 96%, 66% 97%, 64% 96%, 62% 97%, 60% 96%, 58% 97%, 56% 96%, 54% 97%, 52% 96%, 50% 97%, 48% 96%, 46% 97%, 44% 96%, 42% 97%, 40% 96%, 38% 97%, 36% 96%, 34% 97%, 32% 96%, 30% 97%, 28% 96%, 26% 97%, 24% 96%, 22% 97%, 20% 96%, 18% 97%, 16% 96%, 14% 97%, 12% 96%, 10% 97%, 8% 96%, 6% 97%, 4% 96%, 2% 97%, 0 96%"}}>
+              <div className="relative overflow-hidden" style={{clipPath: "polygon(0 4%, 2% 3%, 4% 4%, 6% 3%, 8% 4%, 10% 3%, 12% 4%, 14% 3%, 16% 4%, 18% 3%, 20% 4%, 22% 3%, 24% 4%, 26% 3%, 28% 4%, 30% 3%, 32% 4%, 34% 3%, 36% 4%, 38% 3%, 40% 4%, 42% 3%, 44% 4%, 46% 3%, 48% 4%, 50% 3%, 52% 4%, 54% 3%, 56% 4%, 58% 3%, 60% 4%, 62% 3%, 64% 4%, 66% 3%, 68% 4%, 70% 3%, 72% 4%, 74% 3%, 76% 4%, 78% 3%, 80% 4%, 82% 3%, 84% 4%, 86% 3%, 88% 4%, 90% 3%, 92% 4%, 94% 3%, 96% 4%, 98% 3%, 100% 4%, 100% 96%, 98% 97%, 96% 96%, 94% 97%, 92% 96%, 90% 97%, 88% 96%, 86% 97%, 84% 96%, 82% 97%, 80% 96%, 78% 97%, 76% 96%, 74% 97%, 72% 96%, 70% 97%, 68% 96%, 66% 97%, 64% 96%, 62% 97%, 60% 96%, 58% 97%, 56% 96%, 54% 97%, 52% 96%, 50% 97%, 48% 96%, 46% 97%, 44% 96%, 42% 97%, 40% 96%, 38% 97%, 36% 96%, 34% 97%, 32% 96%, 30% 97%, 28% 96%, 26% 97%, 24% 96%, 22% 97%, 20% 96%, 18% 97%, 16% 96%, 14% 97%, 12% 96%, 10% 97%, 8% 96%, 6% 97%, 4% 96%, 2% 97%, 0 96%"}}>
+                <div className="relative h-[15rem] sm:h-[16rem]">
+                  <Image
+                    src={item.img}
+                    alt={item.alt}
+                    fill
+                    priority={item.title === "Playgroup & Nursery"}
+                    sizes="(max-width: 640px) 100vw, 33vw"
+                    className={`pointer-events-none object-cover ${item.objPos} ${item.mediaShift}`}
+                  />
+
                   {item.video ? (
                     <video
                       ref={(el) => {
@@ -140,22 +149,12 @@ export default function HeroBanner() {
                       muted
                       loop
                       playsInline
-                      preload="auto"
-                      className={`pointer-events-none h-[15rem] w-full object-cover ${item.objPos} ${item.mediaShift} sm:h-[16rem]`}
+                      preload="metadata"
+                      className="pointer-events-none absolute inset-0 hidden h-full w-full object-cover opacity-0 transition-opacity duration-300 group-hover:opacity-100 md:block"
                     >
                       <source src={item.video} />
                     </video>
-                  ) : (
-                    <Image
-                      src={item.img}
-                      alt={item.alt}
-                      width={640}
-                      height={350}
-                      priority
-                      sizes="(max-width: 640px) 100vw, 33vw"
-                      className={`h-[15rem] w-full object-cover ${item.objPos} ${item.mediaShift} sm:h-[16rem]`}
-                    />
-                  )}
+                  ) : null}
                 </div>
               </div>
 
