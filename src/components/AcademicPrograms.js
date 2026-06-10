@@ -24,59 +24,59 @@ export default function AcademicPrograms() {
   const steps = useMemo(
     () => [
       {
-        phase: "About NCBS",
-        title: "1. Learn with Understanding",
+        phase: "About Vaksiddhi",
+        title: "1. Dream With Direction",
         description:
-          "Nava Chaithanya Bharathi School (NCBS), established in 2023, is an English medium school in P and T Colony, Madanapalle. The school serves children from Playgroup and Nursery to Grade VIII with a focus on Multiple Intelligence, activity-based learning, individual attention, and holistic development.",
+          "Vaksiddhi Public School, Manvi, nurtures learners from Nursery to Grade 10 with academic focus, strong values, discipline, and a clear path for every child's dream.",
         topImage: "/student.webp",
         bottomImage: "/class.avif",
-        topCardTitle: "Individual Attention",
-        topCardText: "We focus on individual learning speeds and avoid rote memorisation.",
-        midCardTitle: "Activity-Based Learning",
+        topCardTitle: "Child-Centered Growth",
+        topCardText: "Every learner is encouraged to discover strengths, build confidence, and grow with purpose.",
+        midCardTitle: "Experiential Learning",
         midCardText:
-          "Children learn through observation, practice, creativity, movement, and meaningful classroom experiences.",
-        topCardBg: "rgba(18, 61, 109, 0.14)",
+          "Children learn through observation, practice, creativity, discussion, and meaningful classroom experiences.",
+        topCardBg: "rgba(11, 61, 46, 0.14)",
         topTitleColor: "text-[var(--brand-accent)]",
         topTextColor: "text-slate-700",
-        midCardBg: "rgba(212, 161, 31, 0.24)",
+        midCardBg: "rgba(212, 166, 74, 0.24)",
         midTitleColor: "black",
         midTextColor: "text-slate-700",
       },
       {
-        phase: "Methodology",
-        title: "2. Multiple Intelligence",
+        phase: "Learning",
+        title: "2. Learn Beyond Textbooks",
         description:
-          "NCBS combines multiple intelligence and activity-based learning so each child can grow at a comfortable pace in a joyful environment.",
+          "The school combines academic excellence, AI-enabled smart classrooms, technology integration, and activity-rich learning so curiosity becomes confidence.",
         topImage: "/room.webp",
         bottomImage: "/hero.avif",
-        topCardTitle: "Brain Gym",
-        topCardText: "Exercises for attention and memory for ages 3–9.",
-        midCardTitle: "Sensorial Training",
+        topCardTitle: "Smart Classrooms",
+        topCardText: "AI-enabled tools make concepts visual, interactive, and easier to understand.",
+        midCardTitle: "Future-Ready Skills",
         midCardText:
-          "Hands-on learning for pre-primary children through touch, sight, sound, movement, and observation.",
-        topCardBg: "rgba(212, 161, 31, 0.3)",
+          "Students develop communication, critical thinking, collaboration, creativity, and digital awareness.",
+        topCardBg: "rgba(212, 166, 74, 0.3)",
         topTitleColor: "text-[var(--brand-primary)]",
         topTextColor: "text-slate-700",
-        midCardBg: "rgba(18, 61, 109, 0.2)",
+        midCardBg: "rgba(11, 61, 46, 0.2)",
         midTitleColor: "text-[var(--brand-accent)]",
         midTextColor: "text-slate-700",
       },
       {
-        phase: "Why Choose Us",
-        title: "3. Supportive Schooling",
+        phase: "Growth",
+        title: "3. Grow Into Leadership",
         description:
-          "The school offers AC classrooms, safe transport, smartboards where suitable, regular evaluation, and a secure child-safe campus environment.",
+          "Discipline, character building, leadership development, and a safe caring campus help learners become responsible future citizens.",
         topImage: "/test.png",
         bottomImage: "/exam.jpeg",
-        topCardTitle: "TaRL Approach",
-        topCardText: "Teaching at the Right Level helps children strengthen Math basics.",
+        topCardTitle: "Strong Values",
+        topCardText: "Responsibility, respect, discipline, and empathy shape daily school life.",
         midCardTitle: "Holistic Development",
         midCardText:
-          "Creative schooling approaches support confidence, curiosity, and joyful discovery.",
-        topCardBg: "rgba(18, 61, 109, 0.16)",
+          "Academics, confidence, creativity, leadership, and character grow together.",
+        topCardBg: "rgba(11, 61, 46, 0.16)",
         topTitleColor: "text-[var(--brand-accent)]",
         topTextColor: "text-slate-700",
-        midCardBg: "#7ec1ff82",
+        midCardBg: "#E7C97982",
         midTitleColor: "black",
         midTextColor: "text-slate-700",
       },
@@ -141,7 +141,7 @@ export default function AcademicPrograms() {
         <div className="flex flex-col justify-center space-y-8">
           <div>
             <h2 className="text-3xl font-black leading-[0.95] tracking-tight text-[var(--brand-primary)] sm:text-5xl md:text-6xl lg:text-7xl">
-              About NCBS
+              About Vaksiddhi
             </h2>
 
             <div className="mt-5 flex flex-wrap items-center gap-2 text-sm font-bold uppercase tracking-[0.2em] text-slate-400 sm:text-base">
@@ -231,7 +231,7 @@ export default function AcademicPrograms() {
           <div className="flex flex-col gap-4 sm:gap-6">
             <article className="relative min-h-[320px] flex-1 overflow-hidden rounded-[2rem] bg-[var(--brand-accent)]/8 shadow-xl sm:min-h-[400px] sm:rounded-[2.5rem]">
               <div key={current.topImage} className="absolute inset-0 animate-wipe-up">
-                <Image src={current.topImage} alt="NCBS classroom learning" fill className="object-cover" />
+                <Image src={current.topImage} alt="Vaksiddhi classroom learning" fill className="object-cover" />
               </div>
             </article>
 
@@ -283,7 +283,7 @@ export default function AcademicPrograms() {
                   baseDelay={80}
                 />
                 {activeStep === 2 && (
-                  <p className="mt-4 text-sm font-semibold text-slate-700">We focus on individual learning speeds and avoid rote memorisation.</p>
+                  <p className="mt-4 text-sm font-semibold text-slate-700">Every dream deserves a path, and every child deserves guidance that feels personal.</p>
                 )}
               </div>
             </article>

@@ -3,45 +3,45 @@ import { Brain, Map, Hand, Sigma, Wind, Bus, Languages } from "lucide-react";
 
 const facilities = [
   {
-    title: "Brain Gym",
+    title: "AI-Enabled Smart Classrooms",
     img: "/activity.jpg",
-    desc: "Exercises designed to improve attention, memory, coordination, and learning readiness for children aged 3–9.",
+    desc: "Technology-supported classrooms help students see, understand, and apply concepts with confidence.",
     icon: Brain,
   },
   {
-    title: "Map Pointing & State Symbols",
+    title: "Experiential Learning",
     img: "/map.jpg",
-    desc: "Interactive geography activities using puzzles, maps, landmarks, and state symbols to make learning visual and playful.",
+    desc: "Hands-on activities turn curiosity into understanding beyond textbooks.",
     icon: Map,
   },
   {
-    title: "Sensorial Training",
+    title: "Child-Centered Learning",
     img: "/sec.jpg",
-    desc: "Hands-on pre-primary activities that help children learn through touch, sight, sound, movement, and observation.",
+    desc: "Every child is encouraged to learn, question, communicate, and grow at a confident pace.",
     icon: Hand,
   },
   {
-    title: "TaRL Approach",
+    title: "Strong Academic Foundation",
     img: "/ncbs/fundamental-duties.jpg",
-    desc: "Teaching at the Right Level helps children strengthen Math basics and learn according to their current understanding.",
+    desc: "Clear concepts, regular practice, and thoughtful evaluation support steady academic growth.",
     icon: Sigma,
   },
   {
-    title: "AC Classrooms",
+    title: "Discipline and Values",
     img: "/class.avif",
-    desc: "Comfortable air-conditioned classrooms that support focused learning throughout the school day.",
+    desc: "Respect, responsibility, discipline, and character building shape daily learning.",
     icon: Wind,
   },
   {
-    title: "Safe Transport Facility",
+    title: "Safe and Caring Campus",
     img: "/transport.png",
-    desc: "A safe and convenient transport facility for students with parent-friendly communication.",
+    desc: "A secure, caring campus helps students feel supported and ready to learn.",
     icon: Bus,
   },
   {
-    title: "English Medium Environment",
+    title: "Future-Ready Environment",
     img: "/pl.webp",
-    desc: "English medium learning environment with regular evaluation and child progress tracking.",
+    desc: "Students build communication, leadership, digital awareness, and lifelong learning habits.",
     icon: Languages,
   },
 ];
@@ -50,7 +50,7 @@ export default function SchoolFacilities() {
   return (
     <section className="mx-auto max-w-8xl px-4 py-12 sm:px-6 lg:px-8">
       <h2 className="mb-20 py-8 text-center text-3xl font-extrabold text-[var(--brand-primary)] sm:text-4xl">
-        NCBS Features
+        Vaksiddhi Features
       </h2>
 
       <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

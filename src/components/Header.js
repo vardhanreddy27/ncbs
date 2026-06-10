@@ -33,7 +33,7 @@ export default function Header() {
            
           </div>
 
-          <div className="text-center sm:flex-1">Admissions Open • {schoolInfo.tagline}</div>
+          <div className="text-center sm:flex-1">Admissions Open • Creating The Path For Every Dream.</div>
 
           <div className="flex flex-wrap items-center justify-start gap-2 text-[11px] sm:justify-end sm:text-xs">
             <a href={schoolInfo.phoneLinks[0]} className="inline-flex items-center gap-1.5 transition hover:text-[var(--brand-secondary)]">
@@ -52,7 +52,7 @@ export default function Header() {
         <div className="mx-auto grid grid-cols-[1fr_auto] items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 md:grid-cols-[1fr_auto_1fr] md:gap-0 md:py-0 lg:px-8">
           <a href="#" className="justify-self-start text-[var(--brand-primary)]">
             <div className="flex items-center gap-2 sm:gap-3 mt-3">
-              <Image src="/logo.png" alt="Nava Chaithanya Bharathi School logo" width={52} height={67} className="h-10 w-10 border-0 rounded-none object-cover sm:h-12 sm:w-12 md:h-18 md:w-18 lg:h-[74px] lg:w-[74px]" priority />
+              <Image src="/logo.png" alt="Vaksiddhi Public School logo" width={52} height={67} className="h-10 w-10 border-0 rounded-none object-cover sm:h-12 sm:w-12 md:h-18 md:w-18 lg:h-[74px] lg:w-[74px]" priority />
               <div className="flex flex-col text-center justify-center leading-tight">
                 <span className="mt-0.5 flex w-full justify-center text-base font-extrabold text-[var(--brand-primary)] sm:text-lg lg:text-lg">
                
@@ -93,7 +93,7 @@ export default function Header() {
               href={schoolInfo.phoneLinks[0]}
               className="hidden rounded-xl bg-[var(--brand-primary)] px-4 py-2 text-sm font-semibold text-white sm:inline-flex"
             >
-              Contact for Admission
+              Plan Admission Visit
             </a>
             <button
               onClick={() => setIsMobileOpen((prev) => !prev)}
@@ -124,7 +124,7 @@ export default function Header() {
                 className="mt-1 rounded-lg bg-[var(--brand-primary)] px-3 py-2 text-center text-white"
                 onClick={() => setIsMobileOpen(false)}
               >
-                Contact for Admission
+                Plan Admission Visit
               </a>
             </div>
           </div>

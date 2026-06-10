@@ -14,28 +14,28 @@ import {
 import { MdAutoGraph, MdEmail } from "react-icons/md";
 
 export const schoolInfo = {
-  name: "Nava Chaithanya Bharathi School",
-  shortName: "NCBS",
-  tagline: "Shaping Learning Minds through Individual Empowerment.",
-  logoTagline: "English Medium School",
-  logoSubtagline: "Playgroup to Grade VIII",
-  established: "Est. 2023",
-  location: "Door No. 2-422-3-2/B, P and T Colony, Near Hanuman Temple, Madanapalle, Andhra Pradesh 517325",
-  addressShort: "P and T Colony, Madanapalle",
-  phones: ["+91 74161 43373", "+91 91604 37152"],
-  phoneLinks: ["tel:+917416143373", "tel:+919160437152"],
-  email: "navachaithanyabharathischool@gmail.com",
-  emailLink: "mailto:navachaithanyabharathischool@gmail.com",
+  name: "Vaksiddhi Public School ",
+  shortName: "Vaksiddhi",
+  tagline: "Every Dream Deserves A Path.",
+  logoTagline: "Nurturing Minds. Planting Knowledge.",
+  logoSubtagline: "Nursery to Grade 10",
+  established: "Nursery to Grade 10",
+  location: "Behind Amruth Colony, Cheekalparvi Road, Manvi - 584123, Raichur District, Karnataka",
+  addressShort: "Manvi, Raichur District",
+  phones: ["Admissions Guidance", "Campus Visit Desk"],
+  phoneLinks: ["#contact", "#contact"],
+  email: "Visit the campus for admissions support",
+  emailLink: "#contact",
   hours: "Monday – Saturday: 9:00 AM – 5:00 PM",
-  principal: "Principal Manasa Padmanabhuni",
-  principalVision: "Fostering holistic development and creative schooling approaches.",
-  whatsappLink: "https://wa.me/917416143373",
+  principal: "Principal, Vaksiddhi Public School",
+  principalVision: "Creating the path for every dream through values, discipline, and future-ready learning.",
+  whatsappLink: "#contact",
 };
 
 export const brand = {
-  primary: "#0d567f",
-  secondary: "#74a6bf",
-  accent: "#1f6f99",
+  primary: "#0B3D2E",
+  secondary: "#145A32",
+  accent: "#D4A64A",
 };
 
 export const navLinks = [
@@ -49,106 +49,106 @@ export const navLinks = [
 
 export const heroCards = [
   {
-    title: "STEM Labs",
-    color: "bg-[#74a6bf]/20",
+    title: "Smart Classrooms",
+    color: "bg-[#145A32]/20",
   },
   {
-    title: "Guided Learning",
-    color: "bg-[#0d567f]/12",
+    title: "Guided Growth",
+    color: "bg-[#0B3D2E]/12",
   },
   {
-    title: "Campus Culture",
-    color: "bg-[#1f6f99]/12",
+    title: "Values & Leadership",
+    color: "bg-[#D4A64A]/18",
   },
 ];
 
 export const programs = [
   {
-    title: "Playgroup & Nursery",
+    title: "Nursery Foundation",
     subtitle: "Early years",
     description:
-      "Activity-led classrooms that build literacy, numeracy, confidence, and joyful discovery.",
+      "Gentle, child-centered learning that turns curiosity into language, confidence, and joyful discovery.",
     icon: FaBookOpen,
   },
   {
-    title: "Primary Grades",
+    title: "Primary Learning",
     subtitle: "Grade I to V",
     description:
-      "Multiple Intelligence and activity-based learning that supports individual attention and strong basics.",
+      "Experiential classrooms that build strong basics, clear thinking, discipline, and confident communication.",
     icon: FaFlask,
   },
   {
-    title: "Middle School",
-    subtitle: "Grade VI to VIII",
+    title: "High School Readiness",
+    subtitle: "Grade VI to X",
     description:
-      "Concept clarity, regular evaluation, and progress tracking with a parent-friendly learning environment.",
+      "Academic depth, leadership habits, future-ready skills, and values that prepare learners for opportunity.",
     icon: FaUserGraduate,
   },
 ];
 
 export const highlights = [
   {
-    title: "Individual Learning Attention",
-    text: "We focus on individual learning speeds and avoid rote memorisation.",
+    title: "Child-Centered Education",
+    text: "Every learner is guided to discover strengths, ask better questions, and grow with confidence.",
     icon: FaChalkboardTeacher,
   },
   {
-    title: "Activity-Based Learning",
-    text: "Multiple Intelligence learning through movement, observation, practice, and creativity.",
+    title: "Experiential Learning",
+    text: "Learning moves beyond textbooks through observation, practice, discussion, creativity, and reflection.",
     icon: FaBullseye,
   },
   {
-    title: "Holistic Development",
-    text: "Creative schooling approaches that support confidence, curiosity, and overall growth.",
+    title: "Values & Character",
+    text: "Discipline, responsibility, empathy, and leadership are built into everyday school life.",
     icon: FaTrophy,
   },
   {
-    title: "Progress Tracking",
-    text: "Regular evaluation and child progress tracking help families stay informed.",
+    title: "Future-Ready Progress",
+    text: "Technology integration and regular feedback keep families connected to each child's growth path.",
     icon: MdAutoGraph,
   },
 ];
 
 export const examTraining = [
   {
-    title: "Brain Gym",
+    title: "AI-Enabled Smart Classrooms",
     detail:
-      "Exercises designed to improve attention, memory, coordination, and learning readiness for children aged 3–9.",
+      "Modern classroom tools help teachers make concepts visual, interactive, and easier for every learner to understand.",
   },
   {
-    title: "Map Pointing & State Symbols",
+    title: "Experiential Learning",
     detail:
-      "Interactive geography activities using puzzles, maps, landmarks, and state symbols to make learning visual and playful.",
+      "Students learn by doing, exploring, questioning, and connecting lessons to real-life understanding.",
   },
   {
-    title: "TaRL Approach",
+    title: "Leadership With Values",
     detail:
-      "Teaching at the Right Level helps children strengthen Math basics and learn according to their current understanding.",
+      "Discipline, responsibility, teamwork, and confident communication prepare students to become future leaders.",
   },
 ];
 
 export const stats = [
-  { value: "2023", label: "Established" },
-  { value: "VIII", label: "Highest Grade" },
-  { value: "2", label: "Contact Numbers" },
+  { value: "X", label: "Highest Grade" },
+  { value: "Nursery", label: "Starting Grade" },
   { value: "1", label: "Focused Campus" },
+  { value: "5", label: "Growth Pathways" },
 ];
 
 export const testimonials = [
   {
-    name: "Parent Feedback",
-    role: "NCBS Families",
-    quote: "The school balances individual attention, creativity, and steady progress in a reassuring way.",
+    name: "Parent Trust",
+    role: "Vaksiddhi Families",
+    quote: "A school where children are guided with care, discipline, and a clear path for growth.",
   },
   {
     name: "Student Growth",
-    role: "NCBS Learners",
-    quote: "Children learn through activities, movement, and observation rather than memorising blindly.",
+    role: "Vaksiddhi Learners",
+    quote: "Students learn to think clearly, communicate confidently, and take responsibility for their dreams.",
   },
   {
-    name: "Holistic Schooling",
-    role: "NCBS Community",
-    quote: "Creative schooling approaches and regular communication make the admissions journey easy for parents.",
+    name: "Future-Ready Schooling",
+    role: "Vaksiddhi Community",
+    quote: "Innovation, strong values, and personal guidance come together to prepare children for tomorrow.",
   },
 ];
 

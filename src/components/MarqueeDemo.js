@@ -5,39 +5,39 @@ import { cn } from "../utils/cn"; // Importing the `cn` function
 
 const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I have never seen anything like this before. It is amazing. I love it.",
+    name: "Parent Voice",
+    username: "@vaksiddhi",
+    body: "A caring school environment where children are encouraged to dream, learn, and grow with discipline.",
     img: "https://avatar.vercel.sh/jack",
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I do not know what to say. I am speechless. This is amazing.",
+    name: "Student Growth",
+    username: "@learning",
+    body: "Students build confidence through classroom experiences, values, and future-ready learning.",
     img: "https://avatar.vercel.sh/jill",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I am at a loss for words. This is amazing. I love it.",
+    name: "Smart Learning",
+    username: "@innovation",
+    body: "AI-enabled classrooms help turn concepts into clear, engaging learning moments.",
     img: "https://avatar.vercel.sh/john",
   },
   {
-    name: "Jane",
-    username: "@jane",
-    body: "I am at a loss for words. This is amazing. I love it.",
+    name: "Leadership",
+    username: "@values",
+    body: "Discipline, responsibility, and communication are nurtured along with academics.",
     img: "https://avatar.vercel.sh/jane",
   },
   {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I am at a loss for words. This is amazing. I love it.",
+    name: "Holistic Growth",
+    username: "@growth",
+    body: "Learning goes beyond textbooks so every child can discover strengths and purpose.",
     img: "https://avatar.vercel.sh/jenny",
   },
   {
-    name: "James",
-    username: "@james",
-    body: "I am at a loss for words. This is amazing. I love it.",
+    name: "Parent Partnership",
+    username: "@parents",
+    body: "Families feel connected to the child's journey from dream to learning and success.",
     img: "https://avatar.vercel.sh/james",
   },
 ];
@@ -71,8 +71,8 @@ const ReviewCard = ({
 
 const MarqueeDemo = () => {
   return (
-    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden bg-cyan-500 py-10">
-      <h1 className="pb-5 text-4xl font-bold">Registered</h1>
+    <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden bg-[var(--brand-primary)] py-10">
+      <h1 className="pb-5 text-4xl font-bold text-white">Vaksiddhi Voices</h1>
       <Marquee className="justify-center">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />

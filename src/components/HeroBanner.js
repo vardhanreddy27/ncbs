@@ -2,30 +2,19 @@ import Image from "next/image";
 import { useRef } from "react";
 import { schoolInfo } from "@/constants/schoolData";
 
-const CurvedImageMask = () => (
-  <svg className="absolute inset-0 h-full w-full" viewBox="0 0 640 380" preserveAspectRatio="none" style={{opacity: 0}}>
-    <defs>
-      <mask id="imageMask" x="0" y="0" width="640" height="380">
-        <rect width="640" height="380" fill="white" />
-        <path d="M 0,280 Q 160,320 320,300 T 640,280 L 640,0 L 0,0 Z" fill="black" />
-      </mask>
-    </defs>
-  </svg>
-);
-
 export default function HeroBanner() {
   const videoRefs = useRef({});
 
   return (
     <section className="relative overflow-hidden  bg-[#f8fbff] ">
-      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(18,61,109,0.1),transparent_40%),radial-gradient(circle_at_top_right,rgba(212,161,31,0.15),transparent_45%)]" />
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(11,61,46,0.1),transparent_40%),radial-gradient(circle_at_top_right,rgba(212,166,74,0.15),transparent_45%)]" />
 
       <div className="relative mx-auto ">
         <div className="overflow-hidden  ">
           <div className="relative min-h-[600px] sm:min-h-[700px] lg:min-h-screen">
             <Image
               src="/hero.avif"
-              alt="NCBS children learning"
+              alt="Vaksiddhi Public School students learning"
               fill
               priority
               sizes="100vw"
@@ -39,15 +28,15 @@ export default function HeroBanner() {
                   {schoolInfo.name}
                 </span>
 
-                <h1 className="mt-5 text-3xl font-black leading-tight text-p text-[var(--brand-primary)]  sm:text-4xl lg:text-5xl">
+                <h1 className="mt-5 text-3xl font-black leading-tight text-[var(--brand-primary)] sm:text-4xl lg:text-5xl">
                   {schoolInfo.tagline}
                 </h1>
 
                 <p className="mt-4 text-base text-slate-900 sm:hidden">
-                  An activity-based English medium school in Madanapalle for Playgroup, Nursery to Grade VIII.
+                  A future-ready school in Manvi for Nursery to Grade 10.
                 </p>
                 <p className="mt-4 hidden text-base text-slate-900 sm:block sm:text-lg">
-                  At NCBS, we focus on individual learning speeds and avoid rote memorisation through Multiple Intelligence learning, Brain Gym, Sensorial Training, TaRL-based Math support, and creative classroom experiences.
+                  At Vaksiddhi, dreams become direction through academic excellence, strong values, discipline, leadership development, experiential learning, and AI-enabled smart classrooms.
                 </p>
 
                 <div className="mt-6 grid grid-cols-2 gap-3 sm:mt-7 sm:flex sm:flex-row sm:flex-wrap sm:gap-3">
@@ -55,14 +44,14 @@ export default function HeroBanner() {
                     href="#academics"
                     className="w-full rounded-full border border-[var(--brand-accent)]/30 bg-white px-3 py-3 text-center text-xs font-bold text-[var(--brand-accent)] sm:w-auto sm:px-6 sm:text-sm"
                   >
-                    About NCBS
+                    Discover Vaksiddhi
                   </a>
                   <a
                     href="#contact"
                     className="w-full rounded-full bg-[var(--brand-primary)] px-3 py-3 text-center text-xs font-bold text-white shadow-[0_10px_24px_rgba(13,86,127,0.25)] sm:w-auto sm:px-6 sm:text-sm"
 
                   >
-                    Contact for Admission
+                    Plan Admission Visit
                   </a>
                 </div>
               </div>
@@ -73,32 +62,32 @@ export default function HeroBanner() {
         <div className="relative z-20 mx-4 mt-4 grid gap-4 pb-8 sm:mx-6 sm:-mt-40 md:grid-cols-2 md:gap-5 lg:mx-8 lg:-mt-56 lg:grid-cols-3">
           {[
             {
-                title: "Playgroup & Nursery",
-                subtitle: "Early years foundation",
-              tone: "bg-[linear-gradient(180deg,#2f7ea7_0%,#0d567f_100%)]",
+                title: "Nursery Foundation",
+                subtitle: "Curiosity to confidence",
+              tone: "bg-[linear-gradient(180deg,#145A32_0%,#0B3D2E_100%)]",
               img: "/englishlab.jpg",
               video: "/englishlabvideo.mov",
-                alt: "Pre-primary learning activity",
+                alt: "Nursery learning activity",
               objPos: "object-top",
               mediaShift: "mt-2",
             },
             {
                 title: "Primary Learning",
-                subtitle: "Grades I to V",
-              tone: "bg-[linear-gradient(180deg,#1f6f99_0%,#144f75_100%)]",
+                subtitle: "Dreams begin with basics",
+              tone: "bg-[linear-gradient(180deg,#D4A64A_0%,#145A32_100%)]",
               img: "/pl.webp",
               video: "/mathslab.mp4",
-                alt: "Primary learning activity",
+                alt: "Primary students learning with confidence",
               objPos: "object-center",
               mediaShift: "",
             },
             {
-                title: "Upper Primary",
-                subtitle: "Grades VI to VIII",
-              tone: "bg-[linear-gradient(180deg,#89b8ce_0%,#74a6bf_100%)]",
+                title: "Future Leaders",
+                subtitle: "Grades VI to X",
+              tone: "bg-[linear-gradient(180deg,#E7C979_0%,#D4A64A_100%)]",
               img: "/studentsinclass.jpg",
               video: "/studentsinclassvideo.mov",
-                alt: "Upper primary classroom learning",
+                alt: "Students preparing for future leadership",
               objPos: "object-center",
               mediaShift: "",
             },
@@ -131,7 +120,7 @@ export default function HeroBanner() {
                     src={item.img}
                     alt={item.alt}
                     fill
-                    priority={item.title === "Playgroup & Nursery"}
+                    priority={item.title === "Nursery Foundation"}
                     sizes="(max-width: 640px) 100vw, 33vw"
                     className={`pointer-events-none object-cover ${item.objPos} ${item.mediaShift}`}
                   />

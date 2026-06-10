@@ -8,7 +8,7 @@ export default function Footer() {
       <div className="mx-auto grid gap-10 px-0 py-12 md:grid-cols-2 lg:grid-cols-4 lg:px-8">
         <div>
           <a href="#" className="inline-flex items-center gap-3 text-[var(--brand-primary)]">
-            <Image src="/logo.png" alt="Nava Chaithanya Bharathi School logo" width={64} height={64} className="h-14 w-14 rounded-full object-cover sm:h-16 sm:w-16" />
+            <Image src="/logo.png" alt="Vaksiddhi Public School logo" width={64} height={64} className="h-14 w-14 rounded-full object-cover sm:h-16 sm:w-16" />
             <div className="flex flex-col justify-center leading-tight">
               <span className="text-base font-extrabold uppercase tracking-[0.05em] text-[var(--brand-primary)] sm:text-lg">{schoolInfo.name}</span>
               <span className="mt-0.5 inline-flex flex-wrap items-center gap-1 text-[10px] font-semibold uppercase tracking-[0.04em] text-slate-700 sm:text-xs">
@@ -25,7 +25,7 @@ export default function Footer() {
           </a>
           <div className="mt-6 rounded-3xl border border-[var(--brand-secondary)]/25 bg-[var(--brand-primary)]/5 p-4">
             <p className="text-sm font-semibold text-slate-900">For parents</p>
-            <p className="mt-1 text-sm text-slate-600">Admissions updates, academic support, and parent communication in one place.</p>
+            <p className="mt-1 text-sm text-slate-600">Admissions guidance, learning support, and parent connection for every growth stage.</p>
             <div className="mt-4 flex flex-wrap gap-3">
               <a href="#" aria-label="Download on Play Store" className="block transition hover:scale-[1.02]">
                 <Image src="/playstore.webp" alt="Download on Google Play" width={140} height={42} className="h-10 w-auto" />
@@ -54,9 +54,9 @@ export default function Footer() {
         <div>
           <h5 className="text-sm font-extrabold uppercase tracking-wider text-slate-900">Programs</h5>
           <ul className="mt-4 space-y-2 text-slate-600">
-            <li>Playgroup & Nursery</li>
-            <li>Primary Grades</li>
-            <li>Middle School</li>
+            <li>Nursery Foundation</li>
+            <li>Primary Learning</li>
+            <li>Grades VI to X</li>
           </ul>
         </div>
 
@@ -65,9 +65,9 @@ export default function Footer() {
           <ul className="mt-4 space-y-2 text-slate-600">
             <li>{schoolInfo.location}</li>
             <li>{schoolInfo.hours}</li>
-            {schoolInfo.phones.map((phone) => (
+            {schoolInfo.phones.map((phone, index) => (
               <li key={phone}>
-                <a href={`tel:${phone.replace(/\s+/g, "")}`} className="transition hover:text-[var(--brand-primary)]">
+                <a href={schoolInfo.phoneLinks[index]} className="transition hover:text-[var(--brand-primary)]">
                   {phone}
                 </a>
               </li>

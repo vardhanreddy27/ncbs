@@ -5,43 +5,43 @@ import { BrainCircuit, Bus, BookOpen, BarChart3, Languages, ClipboardCheck, Laye
 
 const ncbsFeatures = [
   {
-    title: 'Individual Learning Attention',
-    description: 'We focus on individual learning speeds and avoid rote memorisation.',
+    title: 'AI-Enabled Smart Classrooms',
+    description: 'Modern classroom tools make learning visual, interactive, and ready for tomorrow.',
     icon: BrainCircuit,
     iconColor: 'text-[var(--brand-primary)]',
     bgColor: 'bg-[var(--brand-secondary)]/14',
   },
   {
-    title: 'Activity-Based Learning',
-    description: 'Multiple Intelligence learning supports movement, observation, practice, and creativity.',
+    title: 'Experiential Learning',
+    description: 'Students grow through doing, questioning, observing, discussing, and creating.',
     icon: BookOpen,
     iconColor: 'text-[var(--brand-primary)]',
     bgColor: 'bg-[var(--brand-accent)]/10',
   },
   {
-    title: 'Brain Gym & Sensorial Training',
-    description: 'Attention, memory, and sensory development are supported through age-appropriate activities.',
+    title: 'Future-Ready Skills',
+    description: 'Communication, critical thinking, collaboration, and confidence are shaped from an early age.',
     icon: BarChart3,
     iconColor: 'text-[var(--brand-primary)]',
     bgColor: 'bg-[var(--brand-accent)]/12',
   },
   {
-    title: 'TaRL for Math Basics',
-    description: 'Teaching at the Right Level helps children build stronger numeracy foundations step by step.',
+    title: 'Leadership Development',
+    description: 'Discipline, responsibility, initiative, and teamwork prepare learners to lead with values.',
     icon: ClipboardCheck,
     iconColor: 'text-[var(--brand-primary)]',
     bgColor: 'bg-[var(--brand-secondary)]/16',
   },
   {
-    title: 'AC Classrooms',
-    description: 'Comfortable air-conditioned classrooms support focused learning throughout the school day.',
+    title: 'Safe and Caring Campus',
+    description: 'A calm, secure environment helps children feel supported, respected, and ready to learn.',
     icon: Layers3,
     iconColor: 'text-[var(--brand-primary)]',
     bgColor: 'bg-[var(--brand-secondary)]/16',
   },
   {
-    title: 'Safe Transport Facility',
-    description: 'A safe and convenient transport facility with parent-friendly communication.',
+    title: 'Child-Centered Growth',
+    description: 'Every child is guided to discover strengths, build confidence, and move forward with purpose.',
     icon: ShieldCheck,
     iconColor: 'text-[var(--brand-primary)]',
     bgColor: 'bg-[var(--brand-accent)]/10',
@@ -61,7 +61,7 @@ export default function WhyChooseNCBS() {
                 <div className="relative h-[560px] overflow-hidden" style={{ borderRadius: '2rem' }}>
                   <Image
                     src="/uniform.png"
-                    alt="NCBS classroom environment"
+                    alt="Vaksiddhi Public School classroom environment"
                     fill
                     className="object-cover"
                     priority
@@ -74,17 +74,17 @@ export default function WhyChooseNCBS() {
 
             <div className="relative z-10">
               <h2 className="mt-4 text-3xl font-extrabold leading-tight text-[var(--brand-primary)] md:text-4xl">
-                Why Choose NCBS for Your Child?
+                Why Choose Vaksiddhi for Your Child?
               </h2>
               <p className="mt-4 text-base text-slate-600 md:text-lg">
-                Nava Chaithanya Bharathi School is built around individual attention, creative schooling approaches, and steady child progress.
+                Vaksiddhi Public School creates a clear path from dream to learning, growth, leadership, and success through innovation anchored in strong values.
               </p>
 
               <div className="mt-3 grid gap-5 sm:grid-cols-2">
                 {ncbsFeatures.map((item) => (
                   <article
                     key={item.title}
-                    className="rounded-[1.7rem] border border-[var(--brand-secondary)]/20 bg-[#fafdfff7] p-5 shadow-sm"
+                    className="rounded-[1.7rem] border border-[var(--brand-secondary)]/20 bg-[#F8F4EA]/70 p-5 shadow-sm"
                   >
                     <div className={`mb-4 inline-flex h-14 w-14 items-center justify-center rounded-2xl ${item.bgColor}`}>
                       <item.icon className={item.iconColor} size={28} strokeWidth={1.8} />
@@ -119,7 +119,7 @@ export default function WhyChooseNCBS() {
               <div className="relative h-[380px] w-full overflow-hidden rounded-xl sm:h-[420px] lg:h-[450px]">
                 <Image
                   src="/girl.png"
-                  alt="NCBS student"
+                  alt="Vaksiddhi Public School student"
                   fill
                   className="object-cover object-bottom"
                   priority
@@ -130,7 +130,7 @@ export default function WhyChooseNCBS() {
 
           <div className="flex max-w-xl flex-col justify-center lg:ml-auto">
             <h2 className="text-4xl font-extrabold leading-tight text-[#1f2a44] md:text-5xl lg:text-6xl">
-              Admissions Open at <span className="text-[var(--brand-primary)]">NCBS</span>
+              Admissions Open at <span className="text-[var(--brand-primary)]">Vaksiddhi</span>
             </h2>
 
             <div className="mt-2 text-sm text-gray-700">
@@ -147,7 +147,7 @@ export default function WhyChooseNCBS() {
 
             <a href={schoolInfo.phoneLinks[0]}>
               <button className="mt-4 mb-2 w-1/2 rounded-lg bg-[var(--brand-primary)] px-8 py-3 text-lg font-semibold text-white shadow-md transition hover:scale-105 hover:shadow-lg">
-                ENROLL NOW
+                PLAN A VISIT
               </button>
             </a>
           </div>

@@ -4,46 +4,46 @@ import { Bus, ClipboardCheck, MonitorSmartphone, ShieldCheck, UserRoundCheck, Wa
 
 const smartItems = [
   {
-    title: "Regular Evaluation",
-    description: "Structured evaluations and clear learning checkpoints for every child.",
+    title: "Academic Checkpoints",
+    description: "Clear learning milestones help every child move forward with purpose.",
     icon: ClipboardCheck,
   },
   {
-    title: "Parent Communication",
-    description: "Frequent parent updates about classroom learning and student progress.",
+    title: "Parent Partnership",
+    description: "Families stay connected to each child's learning, growth, and confidence.",
     icon: UserRoundCheck,
   },
   {
-    title: "Smartboard Support",
-    description: "Classroom technology is used where suitable for visual concept clarity.",
+    title: "AI Smart Learning",
+    description: "Technology enhances concept clarity, classroom engagement, and future readiness.",
     icon: MonitorSmartphone,
   },
   {
-    title: "Safe Transport Updates",
-    description: "Transport coordination stays simple and parent-friendly.",
+    title: "Safe Campus Support",
+    description: "A caring environment keeps student safety and comfort at the center.",
     icon: Bus,
   },
   {
-    title: "Child-Safe Campus",
-    description: "Adequate security and child-safe infrastructure across campus spaces.",
+    title: "Values in Action",
+    description: "Discipline, responsibility, respect, and empathy are practiced every day.",
     icon: ShieldCheck,
   },
   {
-    title: "TaRL Tracking",
-    description: "Math support follows current understanding with step-by-step growth tracking.",
+    title: "Growth Pathway",
+    description: "Dream, learning, growth, leadership, and success guide the school journey.",
     icon: Waypoints,
   },
 ];
 
 export default function SmartSchool() {
   return (
-    <section id="smart-school" className="bg-[#f4f8fb] py-20 sm:py-24">
+    <section id="smart-school" className="bg-[#F8F4EA] py-20 sm:py-24">
       <div className="mx-auto px-4 sm:px-6 lg:px-10">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--brand-primary)]">Smart School Support</p>
-          <h2 className="mt-4 text-3xl font-extrabold text-slate-900 sm:text-4xl">Connected Learning for Parents and Students</h2>
+          <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[var(--brand-primary)]">Future-Ready School Support</p>
+          <h2 className="mt-4 text-3xl font-extrabold text-slate-900 sm:text-4xl">Connected Growth for Parents and Students</h2>
           <p className="mt-4 text-base text-slate-600 sm:text-lg">
-            {schoolInfo.name} combines activity-based teaching with regular progress updates to keep families involved in every stage of learning.
+            {schoolInfo.name} combines modern education, value-based guidance, and regular growth focus so families see the path behind every dream.
           </p>
         </div>
 
@@ -64,23 +64,23 @@ export default function SmartSchool() {
             <div className="relative h-full min-h-[380px] w-full">
               <Image
                 src="/hero.avif"
-                alt="NCBS smart learning and parent communication"
+                alt="Vaksiddhi smart learning and parent communication"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 40vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#0d567f]/80 via-[#0d567f]/30 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0B3D2E]/80 via-[#0B3D2E]/30 to-transparent" />
 
               <div className="absolute bottom-0 p-6 text-white sm:p-8">
                 <p className="text-sm font-semibold uppercase tracking-[0.2em] text-white/90">Admissions Desk</p>
                 <h3 className="mt-2 text-2xl font-extrabold">{schoolInfo.shortName} Parent Support</h3>
-                <p className="mt-2 text-sm text-white/90 sm:text-base">For admissions and child progress updates, connect with our team during {schoolInfo.hours}.</p>
+                <p className="mt-2 text-sm text-white/90 sm:text-base">For admissions guidance and campus visit planning, connect with our team during {schoolInfo.hours}.</p>
                 <div className="mt-4 flex flex-wrap gap-3">
                   <a href={schoolInfo.phoneLinks[0]} className="rounded-full bg-white px-4 py-2 text-sm font-bold text-[var(--brand-primary)]">
-                    Call {schoolInfo.phones[0]}
+                    Admission Inquiry
                   </a>
                   <a href={schoolInfo.emailLink} className="rounded-full border border-white/35 bg-white/10 px-4 py-2 text-sm font-bold text-white">
-                    Email Us
+                    Plan Visit
                   </a>
                 </div>
               </div>

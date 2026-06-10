@@ -5,25 +5,25 @@ const profileCards = [
   {
     title: "Child-Centered Leadership",
     description:
-      "Joyful, child-centered, activity-based learning that builds confidence, curiosity, discipline, creativity, and strong values.",
+      "Caring, child-centered learning that builds confidence, curiosity, discipline, responsibility, and strong values.",
     icon: UserRound,
   },
   {
-    title: "Creative Schooling Vision",
+    title: "Future-Ready Vision",
     description:
-      "Multiple Intelligence, Brain Gym, Sensorial Training, and interactive classroom experiences keep learning lively and meaningful.",
+      "AI-enabled smart classrooms, experiential learning, and technology integration make learning modern and meaningful.",
     icon: Lightbulb,
   },
   {
-    title: "Individual Learning Focus",
+    title: "Every Dream Has A Path",
     description:
-      "Every child learns differently, so NCBS supports individual learning speeds and avoids rote memorisation.",
+      "Every child is guided to discover strengths, develop confidence, and prepare for life's opportunities.",
     icon: BookOpen,
   },
   {
     title: "Holistic Development",
     description:
-      "Students grow through observation, hands-on activities, puzzles, movement, questioning, and meaningful classroom experiences.",
+      "Students grow through academics, values, leadership, discipline, creativity, and meaningful classroom experiences.",
     icon: GraduationCap,
   },
 ];
@@ -35,7 +35,7 @@ export default function PrincipalProfileSection() {
         <div className="mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-extrabold leading-tight text-slate-900 sm:text-[2.65rem] md:text-[3.15rem]">From the Principal&apos;s Desk</h2>
           <p className="mx-auto mt-3 max-w-2xl text-sm text-slate-600 sm:text-base">
-            Principal Manasa Padmanabhuni leads NCBS with a child-centered vision focused on joyful learning and individual growth.
+            Vaksiddhi Public School is guided by a child-centered vision focused on confident learners, strong values, and future-ready growth.
           </p>
         </div>
 
@@ -43,7 +43,7 @@ export default function PrincipalProfileSection() {
           <div className="order-2 grid gap-3 sm:grid-cols-2 lg:order-1 lg:grid-cols-1">
             {profileCards.slice(0, 2).map((item) => (
               <article key={item.title} className="min-h-[158px] rounded-[1.45rem] bg-[#f0efec] p-4 shadow-[0_8px_24px_rgba(15,23,42,0.06)] sm:p-5">
-                <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#1a2c5b] text-white">
+                <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--brand-primary)] text-white">
                   <item.icon className="h-5 w-5" />
                 </div>
                 <h3 className="text-base font-bold text-slate-900 sm:text-lg">{item.title}</h3>
@@ -57,26 +57,26 @@ export default function PrincipalProfileSection() {
               <div className="relative h-[320px] w-full bg-[#ff9a26e4] sm:h-[390px] lg:h-[430px] xl:h-[450px]">
                 <Image
                   src="/principal.jpg"
-                  alt="Principal Manasa Padmanabhuni - Nava Chaithanya Bharathi School"
+                  alt="Principal - Vaksiddhi Public School"
                   fill
                   className="object-contain object-center"
                   sizes="(max-width: 1024px) 100vw, 34vw"
                 />
               </div>
               <div className="space-y-2.5 p-4 sm:p-5 lg:p-6">
-                <h3 className="text-xl font-extrabold text-slate-900 sm:text-[1.7rem]">Principal Manasa Padmanabhuni</h3>
+                <h3 className="text-xl font-extrabold text-slate-900 sm:text-[1.7rem]">Principal&apos;s Vision</h3>
                 <p className="text-[11px] font-semibold uppercase tracking-[0.12em] text-[var(--brand-accent)] sm:text-xs">
-                  Principal, Nava Chaithanya Bharathi School
+                  Vaksiddhi Public School
                 </p>
                 <p className="text-xs leading-relaxed text-slate-700 sm:text-sm">
-                  A child-centered leader who believes in joyful learning, confidence, creativity, discipline, and strong values.
+                  Creating the path for every dream through academic excellence, discipline, leadership, technology, and character.
                 </p>
                 <div className="flex flex-wrap gap-2 pt-1">
-                  <span className="inline-flex items-center gap-2 rounded-full bg-[#e7edf3] px-3 py-1 text-[10px] font-semibold text-[#1a2c5b] sm:text-[11px]">
+                  <span className="inline-flex items-center gap-2 rounded-full bg-[#E7C979]/30 px-3 py-1 text-[10px] font-semibold text-[var(--brand-primary)] sm:text-[11px]">
                     <HeartHandshake className="h-3.5 w-3.5" />
-                    Individual learning speeds
+                    Dream to leadership
                   </span>
-                  <span className="inline-flex items-center gap-2 rounded-full bg-[#e7edf3] px-3 py-1 text-[10px] font-semibold text-[#1a2c5b] sm:text-[11px]">
+                  <span className="inline-flex items-center gap-2 rounded-full bg-[#E7C979]/30 px-3 py-1 text-[10px] font-semibold text-[var(--brand-primary)] sm:text-[11px]">
                     <GraduationCap className="h-3.5 w-3.5" />
                     Holistic development
                   </span>
@@ -88,7 +88,7 @@ export default function PrincipalProfileSection() {
           <div className="order-3 grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
             {profileCards.slice(2, 4).map((item) => (
               <article key={item.title} className="min-h-[158px] rounded-[1.45rem] bg-[#f0efec] p-4 shadow-[0_8px_24px_rgba(15,23,42,0.06)] sm:p-5">
-                <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[#1a2c5b] text-white">
+                <div className="mb-3 inline-flex h-10 w-10 items-center justify-center rounded-xl bg-[var(--brand-primary)] text-white">
                   <item.icon className="h-5 w-5" />
                 </div>
                 <h3 className="text-base font-bold text-slate-900 sm:text-lg">{item.title}</h3>
