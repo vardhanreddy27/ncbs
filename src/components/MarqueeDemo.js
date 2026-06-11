@@ -5,39 +5,39 @@ import { cn } from "../utils/cn"; // Importing the `cn` function
 
 const reviews = [
   {
-    name: "Jack",
-    username: "@jack",
-    body: "I have never seen anything like this before. It is amazing. I love it.",
+    name: "Socratic Thinking",
+    username: "SEED",
+    body: "Students are encouraged to ask why, reason clearly, and discover knowledge.",
     img: "https://avatar.vercel.sh/jack",
   },
   {
-    name: "Jill",
-    username: "@jill",
-    body: "I do not know what to say. I am speechless. This is amazing.",
+    name: "Experiential Learning",
+    username: "SEED",
+    body: "Hands-on learning connects classroom concepts with the real world.",
     img: "https://avatar.vercel.sh/jill",
   },
   {
-    name: "John",
-    username: "@john",
-    body: "I am at a loss for words. This is amazing. I love it.",
+    name: "Excellence",
+    username: "SEED",
+    body: "Every child is guided to achieve personal best with confidence and pride.",
     img: "https://avatar.vercel.sh/john",
   },
   {
-    name: "Jane",
-    username: "@jane",
-    body: "I am at a loss for words. This is amazing. I love it.",
+    name: "Discipline",
+    username: "SEED",
+    body: "Responsibility, focus, values, and resilience are built into daily life.",
     img: "https://avatar.vercel.sh/jane",
   },
   {
-    name: "Jenny",
-    username: "@jenny",
-    body: "I am at a loss for words. This is amazing. I love it.",
+    name: "AI Smart Classes",
+    username: "Feature",
+    body: "AI-powered learning methods support clear, visual, interactive lessons.",
     img: "https://avatar.vercel.sh/jenny",
   },
   {
-    name: "James",
-    username: "@james",
-    body: "I am at a loss for words. This is amazing. I love it.",
+    name: "Hostel Care",
+    username: "Feature",
+    body: "Separate residential facilities for boys and girls include personal care.",
     img: "https://avatar.vercel.sh/james",
   },
 ];
@@ -72,7 +72,7 @@ const ReviewCard = ({
 const MarqueeDemo = () => {
   return (
     <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden bg-cyan-500 py-10">
-      <h1 className="pb-5 text-4xl font-bold">Registered</h1>
+      <h1 className="pb-5 text-4xl font-bold">The Vaksiddhi Promise</h1>
       <Marquee className="justify-center">
         {firstRow.map((review) => (
           <ReviewCard key={review.username} {...review} />

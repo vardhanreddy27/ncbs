@@ -62,13 +62,13 @@ export default function SpecializedPrograms() {
                 {item.text}
               </p>
 
-              {/* Read More Button */}
-              <button
+              <a
+                href="#contact"
                 className={`mt-auto w-full py-3 rounded-full text-sm font-semibold flex items-center justify-center gap-2 transition-opacity hover:opacity-90 ${item.buttonStyle}`}
               >
-                Read More
+                Enquire for 2026-27
                 <span className="text-xs">→</span>
-              </button>
+              </a>
             </div>
           ))}
         </div>

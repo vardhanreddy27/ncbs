@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { TbSchool } from "react-icons/tb";
 import { BiWorld } from "react-icons/bi";
 import { FaBook } from "react-icons/fa";
@@ -13,52 +12,21 @@ const Hero = () => {
             <Image src="/logo.jpg" alt="Vaksiddhi Public School logo" width={48} height={48} className="h-12 w-12 rounded-full object-cover ring-2 ring-[var(--brand-accent)]/30" />
             <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand-primary)]">Vaksiddhi</span>
           </div>
-          <h1 className="mb-4 mt-8 text-4xl font-bold">Every Dream Deserves A Path</h1>
+          <h1 className="mb-4 mt-8 text-4xl font-bold">Admissions Open for 2026-27</h1>
           <p className="text-lg text-gray-700 mb-6">
             SEED learning, AI Smart Classes, State Syllabus with CBSE readiness, and caring mentorship for Pre-School to Grade X.
           </p>
        
-          <div className="flex  space-x-4 ">
-            <div className="w-24 h-12 flex  filter grayscale">
-              <Image
-                src="/standford.png"
-                alt="Stanford University Logo"
-                width={100}
-                height={50}
-                className="object-contain"
-              />
-            </div>
-            <div className="w-24 h-12 flex justify-center items-center filter grayscale">
-              <Image
-                src="/cambridge.png"
-                alt="Cambridge University Logo"
-                width={100}
-                height={50}
-                className="object-contain"
-              />
-            </div>
-            <div className="w-24 h-12 flex justify-center items-center filter grayscale">
-              <Image
-                src="/mit.png"
-                alt="MIT Logo"
-                width={100}
-                height={50}
-                className="object-contain"
-              />
-            </div>
-            <div className="w-24 h-12 flex justify-center items-center filter grayscale">
-              <Image
-                src="/harvard.png"
-                alt="Harvard University Logo"
-                width={100}
-                height={50}
-                className="object-contain"
-              />
-            </div>
+          <div className="flex flex-wrap gap-3">
+            {["AI Smart Classes", "State Syllabus", "CBSE in Process", "Hostel Care"].map((item) => (
+              <span key={item} className="rounded-full border border-[var(--brand-secondary)]/25 px-4 py-2 text-sm font-semibold text-[var(--brand-primary)]">
+                {item}
+              </span>
+            ))}
           </div>
-            <Link href="/signup" className="inline-block mt-6 rounded-lg bg-[var(--brand-primary)] px-6 py-3 text-white shadow-md">
-              Enroll Now
-            </Link>
+            <a href="#contact" className="inline-block mt-6 rounded-lg bg-[var(--brand-primary)] px-6 py-3 text-white shadow-md">
+              Enquire Now
+            </a>
         </div>
 
         <div className="md:w-1/2 flex justify-end items-end">

@@ -20,12 +20,12 @@ export default function Footer() {
           <div className="mt-6 rounded-3xl border border-[var(--brand-secondary)]/25 bg-[var(--brand-primary)]/5 p-4">
             <p className="text-sm font-semibold text-slate-900">Admissions Open 2026-27</p>
             <p className="mt-1 text-sm text-slate-600">Pre-School to Grade X, currently expanding from Pre-School to VIII, with State Syllabus and CBSE affiliation in process.</p>
-            <div className="mt-4 flex flex-wrap gap-3">
-              <a href="#" aria-label="Download on Play Store" className="block transition hover:scale-[1.02]">
-                <Image src="/playstore.webp" alt="Download on Google Play" width={140} height={42} className="h-10 w-auto" />
+            <div className="mt-4 flex flex-wrap gap-3 text-xs font-bold uppercase tracking-[0.14em] text-[var(--brand-primary)]">
+              <a href="#contact" className="rounded-full bg-white px-4 py-2 shadow-sm transition hover:text-[var(--brand-accent)]">
+                Enquire Now
               </a>
-              <a href="#" aria-label="Download on App Store" className="block transition hover:scale-[1.02]">
-                <Image src="/appstore.webp" alt="Download on App Store" width={140} height={42} className="h-10 w-auto" />
+              <a href={schoolInfo.emailLink} className="rounded-full bg-white px-4 py-2 shadow-sm transition hover:text-[var(--brand-accent)]">
+                Email Admissions
               </a>
             </div>
           </div>
