@@ -36,18 +36,18 @@ export default function HeroBanner() {
             <div className="relative z-10 flex items-end px-4 pb-12 sm:min-h-[520px] sm:items-center sm:px-8 sm:pb-0 md:px-10 lg:px-12">
               <div className="mt-64 max-w-xl sm:mt-0">
                 <span className="inline-flex rounded-full border border-[var(--brand-secondary)]/40 bg-white/90 px-4 py-1 text-xs font-bold uppercase tracking-[0.18em] text-[var(--brand-primary)]">
-                  {schoolInfo.name}
+                  {schoolInfo.parentOrganization}
                 </span>
 
                 <h1 className="mt-5 text-3xl font-black leading-tight text-p text-[var(--brand-primary)]  sm:text-4xl lg:text-5xl">
-                  Creating The Path For Every Dream
+                  {schoolInfo.name}
                 </h1>
 
                 <p className="mt-4 text-base text-slate-900 sm:hidden">
-                  SEEP smart classrooms and experiential learning that make every child future-ready.
+                  Admissions Open 2026-27 with SEED learning, AI Smart Classes, and personal care.
                 </p>
                 <p className="mt-4 hidden text-base text-slate-900 sm:block sm:text-lg">
-                  Beyond the textbook, Vaksiddhi integrates SEEP smart classrooms, hands-on learning, values, and guided mentoring from Nursery to Grade 10. Every learner grows with confidence, discipline, and a clear path for the future.
+                  Nurturing Minds. Planting Knowledge. Growing Excellence. From Pre-School to Grade X, Vaksiddhi blends Socratic thinking, experiential learning, excellence, and discipline with AI-powered smart classes, sports, culture, and caring mentorship.
                 </p>
 
                 <div className="mt-6 grid grid-cols-2 gap-3 sm:mt-7 sm:flex sm:flex-row sm:flex-wrap sm:gap-3">
@@ -55,14 +55,14 @@ export default function HeroBanner() {
                     href="#programs"
                     className="w-full rounded-full border border-[var(--brand-accent)]/30 bg-white px-3 py-3 text-center text-xs font-bold text-[var(--brand-accent)] sm:w-auto sm:px-6 sm:text-sm"
                   >
-                    Explore Programs
+                    Explore SEED Programs
                   </a>
                   <a
                     href="#contact"
                     className="w-full rounded-full bg-[var(--brand-primary)] px-3 py-3 text-center text-xs font-bold text-white shadow-[0_10px_24px_rgba(11,61,46,0.25)] sm:w-auto sm:px-6 sm:text-sm"
 
                   >
-                    Contact for Admission
+                    Admissions Open 2026-27
                   </a>
                 </div>
               </div>
@@ -74,7 +74,7 @@ export default function HeroBanner() {
           {[
             {
               title: "PRE SCHOOL",
-              subtitle: "Nursery, L.K.G & U.K.G",
+              subtitle: "Pre-School, L.K.G & U.K.G",
               tone: "bg-[linear-gradient(180deg,#b84c3f_0%,#a63d32_100%)]",
               img: "/englishlab.jpg",
               video: "/englishlabvideo.mov",
@@ -84,7 +84,7 @@ export default function HeroBanner() {
             },
             {
               title: "PRIMARY SCHOOL",
-              subtitle: "Grade I to V",
+              subtitle: "Grade I to VIII",
               tone: "bg-[linear-gradient(180deg,#1e4a8b_0%,#123d6d_100%)]",
               img: "/Mathlab.jpg",
               video: "/mathslab.mov",
@@ -93,8 +93,8 @@ export default function HeroBanner() {
               mediaShift: "",
             },
             {
-              title: "HIGH SCHOOL",
-              subtitle: "Grade VI to X",
+              title: "HIGH SCHOOL EDGE",
+              subtitle: "Grade VI to X + JEE & NEET Foundation",
               tone: "bg-[linear-gradient(180deg,#c9a22d_0%,#b89424_100%)]",
               img: "/studentsinclass.jpg",
               video: "/studentsinclassvideo.mov",

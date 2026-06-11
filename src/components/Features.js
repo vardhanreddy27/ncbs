@@ -19,53 +19,53 @@ function Features() {
   return (
     <div id="features" className="text-black w-full p-5 bg-[#fcfaf2]">
       <div className="col">
-        <p className="text-[var(--brand-primary)]">VAKSIDDHI SEEP APPROACH</p>
+        <p className="text-[var(--brand-primary)]">VAKSIDDHI SEED APPROACH</p>
         <h1 className="font-bold text-4xl ">Key Features</h1>
         <p className="pt-2">
-          Vaksiddhi uses the Smart Experiential Education Program to connect classroom teaching with activity, visual learning, guided practice, and parent-visible progress.
+          Vaksiddhi uses the SEED philosophy to connect Socratic questioning, experiential learning, excellence, and discipline with AI-powered learning methods.
         </p>
 
         <div className="flex flex-wrap justify-center pt-5">
           <Card
             icon={TbDevices2}
-            text="Adaptive Learning: Personalize content based on learning habits."
+            text="AI Smart Classes: Visual, interactive, and student-friendly learning."
             iconColor="#dfff0726"
           />
           <Card
             icon={CgNotes}
-            text="Interactive Quizzes: Adjust difficulty based on performance."
+            text="Socratic Thinking: Children ask why and learn to reason clearly."
             iconColor="#ff4d4f2b"
           />
           <Card
             icon={TbChartLine}
-            text="Instant Feedback: Quick feedback on quiz answers."
+            text="JEE & NEET Foundation: Specialized coaching from VI Standard onward."
             iconColor="#1987542b"
           />
           <Card
             icon={CgSmileMouthOpen}
-            text="Emotion Analysis: Detect emotions for better engagement."
+            text="Personal Care: Dedicated support for hesitant learners."
             iconColor="#c7d2fe75"
           />
         </div>
         <div className="flex flex-wrap justify-center pt-5">
           <Card
             icon={AiOutlineDashboard}
-            text="Educator Dashboard: Monitor student progress."
+            text="State Syllabus: Strong school fundamentals with CBSE affiliation in process."
             iconColor="#ffecb3"
           />
           <Card
             icon={AiOutlineTeam}
-            text="Collaborative Space: Engage in group projects."
+            text="Residential Facilities: Separate premium hostel care for boys and girls."
             iconColor="#b2ebf2"
           />
           <Card
             icon={AiOutlineQuestionCircle}
-            text="Gamification Elements: Reward learning milestones."
+            text="Sports & Culture: Holistic development beyond academics."
             iconColor="#ffcdd2"
           />
           <Card
             icon={AiOutlineBook}
-            text="Educational Resources: Access a vast library of resources."
+            text="Social Responsibility: Free education support for orphan children."
             iconColor="#ffd700"
           />
         </div>

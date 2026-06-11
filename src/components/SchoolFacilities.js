@@ -15,75 +15,75 @@ import {
 
 const facilities = [
   {
-    title: "Maths Lab",
+    title: "AI Smart Classes",
     img: "https://www.lalalajpatraischool.com/img/LabMaths1.jpeg",
-    desc: "Hands-on learning for mathematics.",
+    desc: "AI-powered learning methods and smart classroom tools.",
     icon: Calculator
   },
   {
-    title: "Physics Lab",
+    title: "State & CBSE Curriculum Readiness",
     img: "https://www.afshebbal.ac.in/userfiles/file/Ph%201.JPG",
-    desc: "Explore the laws of nature.",
+    desc: "State Syllabus with CBSE affiliation currently in process.",
     icon: Atom
   },
   {
-    title: "Chemistry Lab",
+    title: "JEE & NEET Foundation",
     img: "https://vspkinternational.edu.in/content/IMG-20240930-WA0077.jpg",
-    desc: "Safe, modern chemistry experiments.",
+    desc: "Specialized coaching from VI Standard onwards.",
     icon: FlaskConical
   },
   {
-    title: "Biology Lab",
+    title: "Separate Boys Hostel",
     img: "https://www.edufab.in/wp-content/uploads/2024/07/Biology-lab.jpg",
-    desc: "Discover the science of life.",
+    desc: "Premium residential care and personal attention.",
     icon: Dna
   },
   {
-    title: "Robotics / Innovation Lab",
+    title: "Separate Girls Hostel",
     img: "https://cloud9.shauryasoft.com/media/contentpage_178_115_2.jpg?638041330024674109?spPDV",
-    desc: "Build, code, and innovate.",
+    desc: "Safe residential facility with attentive care.",
     icon: Bot
   },
   {
-    title: "Computer Lab",
+    title: "Computer & Innovation Lab",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeUCGIeePH-W-vq2j11yMKY8kLKL-HgFx_4Q&s",
-    desc: "Digital skills for the future.",
+    desc: "Digital confidence, creativity, and future skills.",
     icon: Monitor
   },
   {
-    title: "Play Ground",
+    title: "Sports Development",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHtafjeZMs2ERC0G3ovoBil-t0ARP7WT5URQ&s",
-    desc: "Outdoor fun and fitness.",
+    desc: "Strong emphasis on fitness, teamwork, and confidence.",
     icon: Volleyball
   },
   {
-    title: "Library",
+    title: "Library & Reading Culture",
     img: "https://www.al.com/resizer/v2/4SU5I25YWNABLOEM43OPS63UK4.JPG?auth=fe2efbcd118d7f8f895c4e63d773888906f577035af9fda73a8569ce487adffe&width=1280&smart=true&quality=90",
-    desc: "A world of books and knowledge.",
+    desc: "Reading habits that support curiosity and expression.",
     icon: BookOpen
   },
   {
-    title: "Volleyball Court",
+    title: "Cultural Activities",
     img: "https://dpsbopal-ahd.edu.in/Uploads/vollyball_201511020512378937.jpg",
-    desc: "Team spirit and sportsmanship.",
+    desc: "Stage confidence, creativity, and holistic development.",
     icon: Volleyball
   },
   {
-    title: "Indoor Games",
+    title: "Hesitant Learner Care",
     img: "https://strawberryfieldshighschool.com/wp-content/uploads/2019/07/IMG-20190718-WA0035.jpg",
-    desc: "Chess, carroms, and more.",
+    desc: "Dedicated personal support for children who need extra confidence.",
     icon: Gamepad2
   },
   {
-    title: "Bus Facility with GPS Tracking",
+    title: "Transport Support",
     img: "https://swarajya.gumlet.io/swarajya/2025-11-05/5g1ji9ar/schooltransport.jpg?w=610&q=75&compress=true&format=auto",
-    desc: "Safe, real-time tracked transport.",
+    desc: "Convenient support for safe student movement.",
     icon: Bus
   },
   {
-    title: "Conference Hall",
+    title: "Free Education Initiative",
     img: "https://twss.edu.in/wp-content/uploads/2024/12/Conference-Hall-Banner-1024x683.webp",
-    desc: "Meetings, seminars, and events.",
+    desc: "Free education program for students who are orphan children.",
     icon: Presentation
   }
 ];
@@ -92,7 +92,7 @@ export default function SchoolFacilities() {
   return (
     <section className="mx-auto max-w-8xl px-4 py-12 sm:px-6 lg:px-8">
       <h2 className="mb-20 py-8 text-3xl font-extrabold text-[var(--brand-primary)] sm:text-4xl text-center">
-        Our School Facilities
+        Facilities & Student Support
       </h2>
 
       <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">

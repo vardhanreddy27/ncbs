@@ -17,7 +17,7 @@ const achievementData = [
   },
   {
     name: "Mr. Vardhan Reddy",
-    role: "SEEP Program Coordinator",
+    role: "SEED Program Coordinator",
     image: "/principal3.jpg",
     signature: "/sign1.jpeg",
   },

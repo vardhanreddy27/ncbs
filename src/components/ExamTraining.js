@@ -3,33 +3,33 @@ import { TestTube, BarChart3, Users, Zap } from "lucide-react";
 
 const vaksiddhiFeatures = [
   {
-    title: "SEEP Smart Learning",
+    title: "Socratic Thinking",
     description:
-      "Smart Experiential Education Program classrooms make concepts visual, practical, and easy to remember.",
+      "We ignite the spark of why, helping children question, reason, discuss, and discover knowledge.",
     icon: TestTube,
     iconColor: "text-[var(--brand-primary)]",
     bgColor: "bg-[var(--brand-secondary)]/14",
   },
   {
-    title: "Experiential Growth",
+    title: "Experiential Learning",
     description:
-      "Students learn by observing, doing, discussing, and applying ideas in real classroom situations.",
+      "Students learn by doing through exploration, projects, hands-on activities, and real-world connections.",
     icon: Zap,
     iconColor: "text-[var(--brand-primary)]",
     bgColor: "bg-[var(--brand-accent)]/10",
   },
   {
-    title: "Strong Academic Basics",
+    title: "Excellence",
     description:
-      "Nursery to Grade 10 learning builds clear basics, steady discipline, and confident communication.",
+      "Every learner is guided to achieve personal best with confidence, mastery, and pride in progress.",
     icon: BarChart3,
     iconColor: "text-[var(--brand-primary)]",
     bgColor: "bg-[var(--brand-accent)]/12",
   },
   {
-    title: "Values & Personal Care",
+    title: "Discipline",
     description:
-      "Personalized attention and mentoring from seasoned academic experts ensure no child is left behind.",
+      "Strong values, responsibility, focus, character, and resilience are built into daily school life.",
     icon: Users,
     iconColor: "text-[var(--brand-primary)]",
     bgColor: "bg-[var(--brand-secondary)]/16",
@@ -72,11 +72,11 @@ export default function WhyChooseVaksiddhi() {
             {/* RIGHT CONTENT */}
             <div className="relative z-10">
               <h2 className="mt-4 text-3xl font-extrabold leading-tight text-[var(--brand-primary)] md:text-4xl">
-                Why Choose Vaksiddhi for Your Child?
+                Why Choose Vaksiddhi Public School (R), Manvi?
               </h2>
               <p className="mt-4 text-base text-slate-600 md:text-lg">
-                A caring school environment built on SEEP smart learning, strong values,
-                discipline, and complete growth from Nursery to Grade 10.
+                A modern, encouraging campus built on the SEED philosophy, AI Smart Classes, State Syllabus,
+                CBSE curriculum readiness, and holistic development from Pre-School to Grade X.
               </p>
 
               <div className="mt-3 grid gap-5 sm:grid-cols-2">
@@ -174,8 +174,8 @@ export default function WhyChooseVaksiddhi() {
     {/* 👉 RIGHT SIDE TEXT */}
     <div className="max-w-xl lg:ml-auto flex flex-col justify-center h-full ">
       <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1f2a44] leading-tight">
-        SCHOOL <br /> ADMISSION <br /> OPEN FOR{" "}
-        <span className="text-[var(--brand-primary)]">2026</span>
+        ADMISSIONS <br /> OPEN FOR <br />
+        <span className="text-[var(--brand-primary)]">2026-27</span>
       </h2>
 
       {/* CTA */}    {/* LOCATION + CONTACT */}
@@ -183,14 +183,14 @@ export default function WhyChooseVaksiddhi() {
         <div className="flex items-center gap-2">
           📍
           <span className="font-medium">
-            BEHIND AMRUTH COLONY, CHEEKALPARVI ROAD, MANVI - 584123
+            BEHIND AMRUTH COLONY, CHEEKALPARVI ROAD, MANVI-584123
           </span>
         </div>
 
         <div className="flex items-center mb-2 gap-2">
           📞
           <span className="font-medium ">
-            VAKSIDDHI PUBLIC SCHOOL, RAICHUR DISTRICT
+            AI SMART CLASSES | HOSTELS | JEE & NEET FROM VI STANDARD
           </span>
         </div>
       </div>

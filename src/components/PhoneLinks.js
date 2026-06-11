@@ -3,10 +3,10 @@ import { schoolInfo } from "@/constants/schoolData";
 export default function PhoneLinks() {
   return (
     <>
-      {schoolInfo.phones.map((phone) => (
+      {schoolInfo.phones.map((phone, index) => (
         <a
           key={phone}
-          href={`tel:${phone.replace(/\s+/g, "")}`}
+          href={schoolInfo.phoneLinks[index]}
           className="font-semibold text-[var(--brand-primary)] transition hover:text-[var(--brand-accent)]"
         >
           {phone}

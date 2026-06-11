@@ -8,9 +8,9 @@ const SCHOOL_ADDRESS = schoolInfo.location;
 const contactDetails = [
   {
     icon: Phone,
-    title: schoolInfo.phones[0],
-    description: "Connect with the admissions team for campus visits, grade details, and SEEP program guidance.",
-    meta: schoolInfo.hours,
+    title: "B. Balaramakrishna",
+    description: "President - B.Sc., LL.B. Call for admissions guidance, trust information, and campus visit support.",
+    meta: `Cell: ${schoolInfo.phones[0]}`,
     bgColor: "bg-[#efe1e3]",
     textColor: "text-slate-800",
     iconColor: "text-[var(--brand-primary)]",
@@ -19,9 +19,9 @@ const contactDetails = [
   },
   {
     icon: FaWhatsapp,
-    title: schoolInfo.phones[1],
-    description: "Visit the campus desk for admissions support, parent guidance, and school tour scheduling.",
-    meta: "Admissions and campus visit support",
+    title: "C.H. Damodhar Rao",
+    description: "Secretary. Connect for admissions open 2026-27, grade details, and school information.",
+    meta: `Cell: ${schoolInfo.phones[1]}`,
     bgColor: "bg-[#e8f7ef]",
     textColor: "text-slate-800",
     iconColor: "text-[#1fa855]",
@@ -30,15 +30,15 @@ const contactDetails = [
   },
   {
     icon: MapPin,
-    title: schoolInfo.addressShort,
-    description: "Visit Vaksiddhi Public School in Manvi for infrastructure tour and admissions counseling.",
-    meta: "Campus visits by appointment",
+    title: "K. Srinivas Rao",
+    description: "Trustee. Reach out for parent guidance, hostel information, and campus support.",
+    meta: `Cell: ${schoolInfo.phones[2]}`,
     bgColor: "bg-[#fff5db]",
     textColor: "text-slate-800",
     iconColor: "text-[var(--brand-primary)]",
     shadow: "shadow-sm border border-[var(--brand-secondary)]/35",
     // This will open the user's Map app or Google Maps in a new tab
-    link: `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(SCHOOL_ADDRESS)}`,
+    link: schoolInfo.phoneLinks[2],
   },
 ];
 
@@ -51,11 +51,20 @@ function Contact() {
       <div className="mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <h2 className="text-3xl font-extrabold leading-tight text-[var(--brand-primary)] md:text-4xl">
-            Get in Touch With Vaksiddhi
+            Admissions Open 2026-27
           </h2>
           <p className="mb-3 mt-4 text-base text-slate-600 md:text-lg">
-            Visit our Manvi campus for admissions guidance, SEEP program details, and a school tour.
+            Contact MAATA EDUCATION TRUST (R) for admissions, AI Smart Classes, hostel facilities, JEE & NEET foundation, and campus visits.
           </p>
+        </div>
+
+        <div className="mb-8 rounded-3xl border border-[var(--brand-secondary)]/25 bg-white p-5 text-sm text-slate-700 shadow-sm sm:p-6">
+          <p className="font-bold text-[var(--brand-primary)]">{schoolInfo.name}</p>
+          <p className="mt-1">{schoolInfo.parentOrganization}</p>
+          <p className="mt-1">{schoolInfo.location}</p>
+          <a href={schoolInfo.emailLink} className="mt-2 inline-block font-semibold text-[var(--brand-primary)]">
+            {schoolInfo.email}
+          </a>
         </div>
 
         <div className="mb-10 mt-7 grid grid-cols-1 gap-5 sm:mt-9 sm:gap-6 md:grid-cols-3">
@@ -63,7 +72,7 @@ function Contact() {
             <a
               key={index}
               href={item.link}
-            target={item.link.startsWith('http') ? "_blank" : undefined}
+              target={item.link.startsWith('http') ? "_blank" : undefined}
               rel="noopener noreferrer"
               className={`
                 ${item.bgColor} ${item.textColor} ${item.shadow || ''} 
@@ -93,7 +102,6 @@ function Contact() {
           ))}
         </div>
 
-        {/* Full-width Map Section */}
         <div className="relative left-1/2 right-1/2 mt-2 h-[300px] w-screen -translate-x-1/2 overflow-hidden border-t border-slate-200 bg-white sm:h-[360px] md:h-[400px] lg:h-[440px]">
           <iframe
             title="Vaksiddhi Public School Manvi Map"

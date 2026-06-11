@@ -28,36 +28,36 @@ const SmartSchool = () => {
   const leftFeatures = [
     {
       icon: <BarChart3 className="h-5 w-5 text-white" />,
-      title: 'Live performance updates',
-      desc: 'Live updates on attendance, homework, and performance.',
+      title: 'AI-powered progress insights',
+      desc: 'Smart learning data helps teachers identify strengths, gaps, and next steps.',
     },
     {
       icon: <Bus className="h-5 w-5 text-white" />,
-      title: 'Bus tracking alerts',
-      desc: 'Track school bus movement with instant parent notifications.',
+      title: 'Residential care support',
+      desc: 'Separate hostel care for boys and girls with personal attention for every child.',
     },
     {
       icon: <Languages className="h-5 w-5 text-white" />,
-      title: 'Telugu translation support',
-      desc: 'Parents can view app content in Telugu for easier understanding.',
+      title: 'Parent communication',
+      desc: 'Clear updates help families stay connected to academics, activities, and care.',
     },
   ];
 
   const rightFeatures = [
     {
       icon: <BrainCircuit className="h-5 w-5 text-white" />,
-      title: 'AI weakness insights',
-      desc: 'AI-based insights on weak subjects and guided improvement.',
+      title: 'Hesitant learner support',
+      desc: 'Dedicated personal care helps hesitant learners gain confidence step by step.',
     },
     {
       icon: <BookOpen className="h-5 w-5 text-white" />,
-      title: 'Academic resources access',
-      desc: 'Access to notes, homework, and academic calendar in one place.',
+      title: 'JEE & NEET readiness',
+      desc: 'Foundation guidance begins from VI Standard onward with strong basics.',
     },
     {
       icon: <ClipboardCheck className="h-5 w-5 text-white" />,
-      title: 'Smart task follow-up',
-      desc: 'Actionable practice tasks to improve weak learning areas.',
+      title: 'Sports & cultural growth',
+      desc: 'Holistic development includes academics, sports, cultural activities, and values.',
     },
   ];
 
@@ -70,11 +70,10 @@ const SmartSchool = () => {
         {/* Header */}
         <div className="mx-auto mb-14 max-w-3xl text-center sm:mb-16">
           <h2 className="mb-4 text-3xl font-extrabold text-[var(--brand-primary)] sm:text-4xl md:text-5xl">
-            Smart School ERP
+            AI Smart Learning Ecosystem
           </h2>
           <p className="text-base text-slate-600 sm:text-lg">
-            A complete ecosystem for parents to monitor, engage, and accelerate 
-            their child{"'"}s learning journey through data-driven insights.
+            AI Smart Classes, teacher-led mentoring, parent communication, and personal care work together to support every child{"'"}s SEED learning journey.
           </p>
         </div>
 

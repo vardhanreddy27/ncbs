@@ -14,7 +14,7 @@ function DownloadBadge() {
             <h1 className='font-bold text-[var(--brand-primary)]'>VAKSIDDHI</h1>
           </div>
           <p className='mt-3 text-slate-700'>
-            Stay connected with Vaksiddhi school updates, homework, performance, and SEEP learning support.
+            Stay connected with Vaksiddhi school updates, homework, performance, and SEED learning support.
           </p>
           <div className='mt-4 grid gap-3 sm:grid-cols-2'>
             <Image src="/play.png" height={100} width={430} alt="Google Play badge" className="h-auto w-full object-contain" />

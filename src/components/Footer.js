@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaFacebookF, FaInstagram, FaStar } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram } from "react-icons/fa6";
 import { schoolInfo, navLinks } from "@/constants/schoolData";
 
 export default function Footer() {
@@ -12,20 +12,14 @@ export default function Footer() {
             <div className="flex flex-col justify-center leading-tight">
               <span className="text-base font-extrabold uppercase tracking-[0.05em] text-[var(--brand-primary)] sm:text-lg">{schoolInfo.name}</span>
               <span className="mt-0.5 inline-flex flex-wrap items-center gap-1 text-[10px] font-semibold uppercase tracking-[0.04em] text-slate-700 sm:text-xs">
-                <FaStar className="text-yellow-500" />
-                <FaStar className="text-yellow-500" />
-                <FaStar className="text-yellow-500" />
                 <span>{schoolInfo.logoTagline}</span>
-                <FaStar className="text-yellow-500" />
-                <FaStar className="text-yellow-500" />
-                <FaStar className="text-yellow-500" />
               </span>
-              <span className="text-[10px] font-semibold text-slate-600 sm:text-xs">{schoolInfo.logoSubtagline}</span>
+              <span className="text-[10px] font-semibold text-slate-600 sm:text-xs">{schoolInfo.parentOrganization}</span>
             </div>
           </a>
           <div className="mt-6 rounded-3xl border border-[var(--brand-secondary)]/25 bg-[var(--brand-primary)]/5 p-4">
-            <p className="text-sm font-semibold text-slate-900">For parents</p>
-            <p className="mt-1 text-sm text-slate-600">Stay connected with school updates, homework, attendance, and performance support.</p>
+            <p className="text-sm font-semibold text-slate-900">Admissions Open 2026-27</p>
+            <p className="mt-1 text-sm text-slate-600">Pre-School to Grade X, currently expanding from Pre-School to VIII, with State Syllabus and CBSE affiliation in process.</p>
             <div className="mt-4 flex flex-wrap gap-3">
               <a href="#" aria-label="Download on Play Store" className="block transition hover:scale-[1.02]">
                 <Image src="/playstore.webp" alt="Download on Google Play" width={140} height={42} className="h-10 w-auto" />
@@ -54,10 +48,11 @@ export default function Footer() {
         <div>
           <h5 className="text-sm font-extrabold uppercase tracking-wider text-slate-900">Programs</h5>
           <ul className="mt-4 space-y-2 text-slate-600">
-            <li>Nursery Foundation</li>
-            <li>Primary Learning</li>
-            <li>High School Readiness</li>
-            <li>SEEP Smart Learning</li>
+            <li>SEED Philosophy</li>
+            <li>AI Smart Classes</li>
+            <li>JEE & NEET from VI Standard</li>
+            <li>Separate Boys & Girls Hostels</li>
+            <li>Free Education for Orphan Children</li>
           </ul>
         </div>
 
@@ -65,6 +60,11 @@ export default function Footer() {
           <h5 className="text-sm font-extrabold uppercase tracking-wider text-slate-900">Contact Info</h5>
           <ul className="mt-4 space-y-2 text-slate-600">
             <li>{schoolInfo.location}</li>
+            <li>
+              <a href={schoolInfo.emailLink} className="transition hover:text-[var(--brand-primary)]">
+                {schoolInfo.email}
+              </a>
+            </li>
             {schoolInfo.phones.map((phone) => (
               <li key={phone}>
                 <a href={schoolInfo.phoneLinks?.[schoolInfo.phones.indexOf(phone)] || "#contact"} className="transition hover:text-[var(--brand-primary)]">

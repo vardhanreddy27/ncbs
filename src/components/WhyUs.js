@@ -1,26 +1,26 @@
 import SectionHeading from "./SectionHeading";
-import { BookOpen, Stethoscope, Landmark } from "lucide-react";
+import { BookOpen, HeartHandshake, Landmark } from "lucide-react";
 
 const programs = [
   {
-    title: "SEEP Smart Learning",
+    title: "SEED Philosophy",
     icon: BookOpen,
-    text: "Smart Experiential Education Program classrooms help children learn concepts through activity, visuals, and guided discovery.",
+    text: "Socratic thinking, experiential learning, excellence, and discipline shape how every child learns and grows.",
     buttonStyle: "bg-[var(--brand-accent)]/10 text-[var(--brand-accent)]",
     iconWrapStyle: "bg-[var(--brand-secondary)]/12 text-[var(--brand-primary)]",
   },
   {
-    title: "Values & Leadership",
+    title: "JEE & NEET Foundation",
     icon: Landmark,
-    text: "Daily routines build discipline, responsibility, communication, teamwork, and respect for others.",
+    text: "Specialized JEE and NEET coaching begins from VI Standard onward, without weakening school fundamentals.",
     buttonStyle: "bg-[var(--brand-primary)] text-white", // Highlighted state
     iconWrapStyle: "bg-[var(--brand-secondary)]/14 text-[var(--brand-primary)]",
     highlight: true,
   },
   {
-    title: "Academic Excellence",
-    icon: Stethoscope,
-    text: "Strong basics, regular feedback, and caring mentorship help learners grow with confidence from Nursery to Grade 10.",
+    title: "Care Beyond Classrooms",
+    icon: HeartHandshake,
+    text: "Separate hostels for boys and girls, personal care for hesitant learners, and free education support for orphan children.",
     buttonStyle: "bg-[var(--brand-accent)]/10 text-[var(--brand-accent)]",
     iconWrapStyle: "bg-[var(--brand-secondary)]/12 text-[var(--brand-primary)]",
   },
@@ -31,13 +31,12 @@ export default function SpecializedPrograms() {
     <section id="programs" className="bg-[#fafdfff7] py-20"> {/* For Our Specialized Programs */}
       <div className="mx-auto px-4 sm:px-6 lg:px-12">
         <SectionHeading
-          eyebrow="Our Specialized Programs"
+          eyebrow="Admissions Open 2026-27"
           eyebrowBig
           title=""
           subtitle={
             <>
-              SEEP smart learning, value-based education, and focused mentorship designed to help every child grow with confidence.
-              Creating the path for every dream.
+              State Syllabus with CBSE curriculum readiness, AI Smart Classes, sports, culture, and the SEED philosophy for Pre-School to Grade X.
             </>
           }
         />

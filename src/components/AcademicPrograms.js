@@ -23,17 +23,17 @@ export default function AcademicPrograms() {
   const steps = useMemo(
     () => [
       {
-        phase: "Experience",
-        title: "1. Hands-On First",
+        phase: "Ask",
+        title: "1. Socratic Thinking",
         description:
-          "We start with hands-on experiments. By doing first, students build a real mental map of concepts before touching a textbook.",
+          "We begin by igniting the spark of why. Students ask questions, discuss ideas, think critically, and learn to discover knowledge.",
         topImage: "/physicslab.jpeg",
         bottomImage: "/mathslabsection.jpg",
-        topCardTitle: "Quick Discovery",
-        topCardText: "Students quickly discover what they enjoy and where they naturally excel through lab activities.",
-        midCardTitle: "Talent Discovery",
+        topCardTitle: "Question First",
+        topCardText: "Every lesson encourages curiosity, reasoning, and confident classroom participation.",
+        midCardTitle: "Thinking Skills",
         midCardText:
-          "Our labs act as a mirror for your child’s potential by revealing early strengths in logic and creativity.",
+          "Teachers guide children to explain, compare, and connect ideas instead of memorizing blindly.",
         topCardBg: "rgba(18, 61, 109, 0.14)",
         topTitleColor: "text-[var(--brand-accent)]",
         topTextColor: "text-slate-700",
@@ -42,17 +42,17 @@ export default function AcademicPrograms() {
         midTextColor: "text-slate-700",
       },
       {
-        phase: "Understand",
-        title: "2. Interactive Classes",
+        phase: "Experience",
+        title: "2. Experiential Learning",
         description:
-          "Mentors then connect those practical experiences to theory in our smart classrooms, turning curiosity into deep academic knowledge.",
+          "Students learn by doing through exploration, hands-on activities, AI Smart Classes, sports, culture, and real-world examples.",
         topImage: "/classroom2.jpeg",
         bottomImage: "/classroom.jpeg",
-        topCardTitle: "Concept Clarity",
-        topCardText: "Every concept is connected to something students have already experienced with their own hands.",
-        midCardTitle: "Live Discussion",
+        topCardTitle: "Real Understanding",
+        topCardText: "Classroom learning is connected to observation, activity, practice, and application.",
+        midCardTitle: "Smart Ecosystem",
         midCardText:
-          "Students actively question, explain, and collaborate so understanding becomes durable and exam-ready.",
+          "AI-powered methods support teachers with visual, interactive, and student-friendly learning.",
         topCardBg: "rgba(212, 161, 31, 0.3)",
         topTitleColor: "text-[var(--brand-primary)]",
         topTextColor: "text-slate-700",
@@ -61,17 +61,17 @@ export default function AcademicPrograms() {
         midTextColor: "text-slate-700",
       },
       {
-        phase: "Excel",
-        title: "3. Academic Excellence",
+        phase: "Grow",
+        title: "3. Excellence With Discipline",
         description:
-          "Because they have seen it and lived it, students approach assessments with confidence, clarity, and complete understanding.",
+          "Every child is nurtured to achieve personal best through confidence, mastery, responsibility, focus, and resilience.",
         topImage: "/students.jpeg",
         bottomImage: "/exam.jpeg",
-        topCardTitle: "Exam Confidence",
-        topCardText: "Concept-backed preparation helps students perform calmly under pressure.",
+        topCardTitle: "JEE & NEET Edge",
+        topCardText: "Specialized foundation coaching begins from VI Standard onward while school basics stay strong.",
         midCardTitle: "Future Ready",
         midCardText:
-          "From classroom mastery to competitive exams, students grow with a strong base and sharp thinking.",
+          "State Syllabus, CBSE curriculum readiness, values, and personal care prepare learners for opportunity.",
         topCardBg: "rgba(18, 61, 109, 0.16)",
         topTitleColor: "text-[var(--brand-accent)]",
         topTextColor: "text-slate-700",
@@ -140,7 +140,7 @@ export default function AcademicPrograms() {
         <div className="flex flex-col justify-center space-y-8">
           <div>
             <h2 className="text-3xl font-black leading-[0.95] tracking-tight text-[var(--brand-primary)] sm:text-5xl md:text-6xl lg:text-7xl">
-              New Way of Learning
+              The SEED Way of Learning
             </h2>
 
             <div className="mt-5 flex flex-wrap items-center gap-2 text-sm font-bold uppercase tracking-[0.2em] text-slate-400 sm:text-base">
@@ -258,7 +258,7 @@ export default function AcademicPrograms() {
           <div className="flex flex-col gap-4 sm:gap-6">
             <article
               className={`rounded-[2rem] p-5 shadow-sm transition-colors duration-500 sm:rounded-[2.5rem] sm:p-8 ${
-                current.topCardTitle === "Exam Confidence" ? "hidden sm:block" : ""
+                current.topCardTitle === "JEE & NEET Edge" ? "hidden sm:block" : ""
               }`}
               style={{ backgroundColor: current.topCardBg }}
             >

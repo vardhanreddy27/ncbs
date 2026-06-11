@@ -15,7 +15,7 @@ const Hero = () => {
           </div>
           <h1 className="mb-4 mt-8 text-4xl font-bold">Every Dream Deserves A Path</h1>
           <p className="text-lg text-gray-700 mb-6">
-            SEEP smart learning, value-based education, and caring mentorship for Nursery to Grade 10.
+            SEED learning, AI Smart Classes, State Syllabus with CBSE readiness, and caring mentorship for Pre-School to Grade X.
           </p>
        
           <div className="flex  space-x-4 ">
@@ -77,10 +77,10 @@ const Hero = () => {
           <div className="flex flex-col items-center text-center border-r border-white">
             <h2 className="text-xl font-bold flex items-center mb-4">
               <TbSchool className="text-3xl mr-2" />
-              SEEP Smart Learning
+              SEED Smart Learning
             </h2>
             <p className='p-2 mr-5' >
-              Learn through activity, visuals, guided discovery, and real understanding.
+              Ask why, learn by doing, grow with excellence, and build discipline.
             </p>
           </div>
           <div className="flex flex-col items-center text-center border-r border-white">

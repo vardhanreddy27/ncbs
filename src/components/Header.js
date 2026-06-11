@@ -3,7 +3,6 @@ import Image from "next/image";
 import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { FiMenu, FiX } from "react-icons/fi";
 import { schoolInfo, navLinks } from "@/constants/schoolData";
-import { FaStar } from "react-icons/fa6";
 
 
 export default function Header() {
@@ -33,7 +32,7 @@ export default function Header() {
            
           </div>
 
-          <div className="text-center sm:flex-1">Admissions Open 2026-27 - {schoolInfo.tagline}</div>
+          <div className="text-center sm:flex-1">{schoolInfo.admissions} - {schoolInfo.parentOrganization}</div>
 
           <div className="flex flex-wrap items-center justify-start gap-2 text-[11px] sm:justify-end sm:text-xs">
             <a href="#contact" className="inline-flex items-center gap-1.5 transition hover:text-[var(--brand-accent)]">
@@ -41,7 +40,7 @@ export default function Header() {
             </a>
             <span className="text-white/70">|</span>
             <a href="#contact" className="inline-flex items-center gap-1.5 transition hover:text-[var(--brand-accent)]">
-              <span>{schoolInfo.addressShort}</span>
+              <span>{schoolInfo.email}</span>
             </a>
           </div>
         </div>
@@ -60,20 +59,8 @@ export default function Header() {
                 </span>
 
                 <span className="text-[10px] font-semibold uppercase tracking-[0.04em] text-slate-700 sm:text-xs">
-                       <span className="inline-flex ">
-                    <FaStar className="inline text-yellow-500" />
-                    <FaStar className="inline text-yellow-500" />
-                    <FaStar className="inline text-yellow-500" />
-                  </span>
-                    
-                   {" "} {schoolInfo.logoTagline}{""}
-                       <span className="inline-flex  ">
-                    <FaStar className="inline text-yellow-500" />
-                    <FaStar className="inline text-yellow-500" />
-                    <FaStar className="inline text-yellow-500" />
-                  </span>
-                    
-                    </span>
+                  {schoolInfo.logoTagline}
+                </span>
                 <span className="text-[10px] font-semibold text-slate-600 sm:text-xs">{schoolInfo.logoSubtagline}</span>
               </div>
             </div>
@@ -92,7 +79,7 @@ export default function Header() {
               href="#contact"
               className="hidden rounded-xl bg-[var(--brand-primary)] px-4 py-2 text-sm font-semibold text-white sm:inline-flex"
             >
-              Contact for Admission
+              Admissions 2026-27
             </a>
             <button
               onClick={() => setIsMobileOpen((prev) => !prev)}
@@ -123,7 +110,7 @@ export default function Header() {
                 className="mt-1 rounded-lg bg-[var(--brand-primary)] px-3 py-2 text-center text-white"
                 onClick={() => setIsMobileOpen(false)}
               >
-                Contact for Admission
+                Admissions 2026-27
               </a>
             </div>
           </div>
