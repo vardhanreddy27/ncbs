@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { useEffect, useMemo, useRef, useState } from "react";
-import { schoolInfo } from "@/constants/schoolData";
 
 function AnimatedWords({ text, animateKey, className = "", delayStep = 28, baseDelay = 0 }) {
   const words = text.split(" ");
@@ -24,59 +23,59 @@ export default function AcademicPrograms() {
   const steps = useMemo(
     () => [
       {
-        phase: "About Vaksiddhi",
-        title: "1. Dream With Direction",
+        phase: "Experience",
+        title: "1. Hands-On First",
         description:
-          "Vaksiddhi Public School, Manvi, nurtures learners from Nursery to Grade 10 with academic focus, strong values, discipline, and a clear path for every child's dream.",
-        topImage: "/student.webp",
-        bottomImage: "/class.avif",
-        topCardTitle: "Child-Centered Growth",
-        topCardText: "Every learner is encouraged to discover strengths, build confidence, and grow with purpose.",
-        midCardTitle: "Experiential Learning",
+          "We start with hands-on experiments. By doing first, students build a real mental map of concepts before touching a textbook.",
+        topImage: "/physicslab.jpeg",
+        bottomImage: "/mathslabsection.jpg",
+        topCardTitle: "Quick Discovery",
+        topCardText: "Students quickly discover what they enjoy and where they naturally excel through lab activities.",
+        midCardTitle: "Talent Discovery",
         midCardText:
-          "Children learn through observation, practice, creativity, discussion, and meaningful classroom experiences.",
-        topCardBg: "rgba(11, 61, 46, 0.14)",
+          "Our labs act as a mirror for your child’s potential by revealing early strengths in logic and creativity.",
+        topCardBg: "rgba(18, 61, 109, 0.14)",
         topTitleColor: "text-[var(--brand-accent)]",
         topTextColor: "text-slate-700",
-        midCardBg: "rgba(212, 166, 74, 0.24)",
+        midCardBg: "rgba(212, 161, 31, 0.24)",
         midTitleColor: "black",
         midTextColor: "text-slate-700",
       },
       {
-        phase: "Learning",
-        title: "2. Learn Beyond Textbooks",
+        phase: "Understand",
+        title: "2. Interactive Classes",
         description:
-          "The school combines academic excellence, AI-enabled smart classrooms, technology integration, and activity-rich learning so curiosity becomes confidence.",
-        topImage: "/room.webp",
-        bottomImage: "/hero.avif",
-        topCardTitle: "Smart Classrooms",
-        topCardText: "AI-enabled tools make concepts visual, interactive, and easier to understand.",
-        midCardTitle: "Future-Ready Skills",
+          "Mentors then connect those practical experiences to theory in our smart classrooms, turning curiosity into deep academic knowledge.",
+        topImage: "/classroom2.jpeg",
+        bottomImage: "/classroom.jpeg",
+        topCardTitle: "Concept Clarity",
+        topCardText: "Every concept is connected to something students have already experienced with their own hands.",
+        midCardTitle: "Live Discussion",
         midCardText:
-          "Students develop communication, critical thinking, collaboration, creativity, and digital awareness.",
-        topCardBg: "rgba(212, 166, 74, 0.3)",
+          "Students actively question, explain, and collaborate so understanding becomes durable and exam-ready.",
+        topCardBg: "rgba(212, 161, 31, 0.3)",
         topTitleColor: "text-[var(--brand-primary)]",
         topTextColor: "text-slate-700",
-        midCardBg: "rgba(11, 61, 46, 0.2)",
+        midCardBg: "rgba(18, 61, 109, 0.2)",
         midTitleColor: "text-[var(--brand-accent)]",
         midTextColor: "text-slate-700",
       },
       {
-        phase: "Growth",
-        title: "3. Grow Into Leadership",
+        phase: "Excel",
+        title: "3. Academic Excellence",
         description:
-          "Discipline, character building, leadership development, and a safe caring campus help learners become responsible future citizens.",
-        topImage: "/test.png",
+          "Because they have seen it and lived it, students approach assessments with confidence, clarity, and complete understanding.",
+        topImage: "/students.jpeg",
         bottomImage: "/exam.jpeg",
-        topCardTitle: "Strong Values",
-        topCardText: "Responsibility, respect, discipline, and empathy shape daily school life.",
-        midCardTitle: "Holistic Development",
+        topCardTitle: "Exam Confidence",
+        topCardText: "Concept-backed preparation helps students perform calmly under pressure.",
+        midCardTitle: "Future Ready",
         midCardText:
-          "Academics, confidence, creativity, leadership, and character grow together.",
-        topCardBg: "rgba(11, 61, 46, 0.16)",
+          "From classroom mastery to competitive exams, students grow with a strong base and sharp thinking.",
+        topCardBg: "rgba(18, 61, 109, 0.16)",
         topTitleColor: "text-[var(--brand-accent)]",
         topTextColor: "text-slate-700",
-        midCardBg: "#E7C97982",
+        midCardBg: "#7ec1ff82",
         midTitleColor: "black",
         midTextColor: "text-slate-700",
       },
@@ -141,7 +140,7 @@ export default function AcademicPrograms() {
         <div className="flex flex-col justify-center space-y-8">
           <div>
             <h2 className="text-3xl font-black leading-[0.95] tracking-tight text-[var(--brand-primary)] sm:text-5xl md:text-6xl lg:text-7xl">
-              About Vaksiddhi
+              New Way of Learning
             </h2>
 
             <div className="mt-5 flex flex-wrap items-center gap-2 text-sm font-bold uppercase tracking-[0.2em] text-slate-400 sm:text-base">
@@ -183,9 +182,6 @@ export default function AcademicPrograms() {
                         className={`hidden text-lg font-extrabold sm:block sm:text-xl ${isActive ? "text-slate-900" : "text-slate-700"}`}
                         delayStep={24}
                       />
-                        {index === 0 && (
-                          <p className="mt-2 text-sm font-semibold uppercase tracking-[0.18em] text-[var(--brand-primary)]">{schoolInfo.established}</p>
-                        )}
                       <p className="mt-2 block text-sm leading-relaxed text-slate-600 sm:hidden">
                         {step.description}
                       </p>
@@ -231,7 +227,7 @@ export default function AcademicPrograms() {
           <div className="flex flex-col gap-4 sm:gap-6">
             <article className="relative min-h-[320px] flex-1 overflow-hidden rounded-[2rem] bg-[var(--brand-accent)]/8 shadow-xl sm:min-h-[400px] sm:rounded-[2.5rem]">
               <div key={current.topImage} className="absolute inset-0 animate-wipe-up">
-                <Image src={current.topImage} alt="Vaksiddhi classroom learning" fill className="object-cover" />
+                <Image src={current.topImage} alt="Practical Labs" fill className="object-cover" />
               </div>
             </article>
 
@@ -282,9 +278,6 @@ export default function AcademicPrograms() {
                   delayStep={14}
                   baseDelay={80}
                 />
-                {activeStep === 2 && (
-                  <p className="mt-4 text-sm font-semibold text-slate-700">Every dream deserves a path, and every child deserves guidance that feels personal.</p>
-                )}
               </div>
             </article>
 

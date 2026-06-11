@@ -9,7 +9,7 @@ function Signup() {
       </Link>
       <div className="flex justify-center bg-gray-100">
         <div className="bg-white mb-16 mt-2 p-6 rounded-lg shadow-lg w-full max-w-md">
-          <h2 className="text-2xl font-bold mb-2 text-gray-900 text-center">Sign Up for Vaksiddhi</h2>
+          <h2 className="text-2xl font-bold mb-2 text-gray-900 text-center">SignUp for Vaksiddhi</h2>
           <form className="space-y-4">
             <div>
               <label htmlFor="name" className="block text-sm font-medium text-gray-700">Name</label>
@@ -17,7 +17,7 @@ function Signup() {
                 type="text"
                 id="name"
                 name="name"
-                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-[#0B3D2E] sm:text-sm"
+                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-cyan-500 sm:text-sm"
                 required
               />
             </div>
@@ -27,7 +27,7 @@ function Signup() {
                 type="email"
                 id="email"
                 name="email"
-                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-[#0B3D2E] sm:text-sm"
+                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-cyan-500 sm:text-sm"
                 required
               />
             </div>
@@ -37,7 +37,7 @@ function Signup() {
                 type="text"
                 id="academic-studying"
                 name="academic-studying"
-                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-[#0B3D2E] sm:text-sm"
+                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-cyan-500 sm:text-sm"
                 required
               />
             </div>
@@ -47,14 +47,14 @@ function Signup() {
                 type="password"
                 id="password"
                 name="password"
-                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-[#0B3D2E] sm:text-sm"
+                className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-cyan-500 sm:text-sm"
                 required
               />
             </div>
             <div>
               <button
                 type="submit"
-                className="w-full mb-3 flex justify-center mt-3 py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#0B3D2E] hover:bg-[#145A32] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#0B3D2E]"
+                className="w-full mb-3 flex justify-center mt-3 py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-cyan-500 hover:bg-cyan-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-cyan-500"
               >
                 SignUp
               </button>
@@ -62,7 +62,7 @@ function Signup() {
           </form>
           <div className="text-center mt-4">
             <span className="text-sm text-gray-600">Already a user? </span>
-            <Link href="/login" className="text-sm text-[#0B3D2E] hover:text-[#145A32]">
+            <Link href="/login" className="text-sm text-cyan-600 hover:text-cyan-800">
               Login
             </Link>
           </div>

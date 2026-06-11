@@ -3,10 +3,11 @@ import HeroBanner from "./HeroBanner";
 import AcademicPrograms from "./AcademicPrograms";
 import WhyUs from "./WhyUs";
 import ExamTraining from "./ExamTraining";
+import Achievements from "./Achievements";
 import SchoolFacilities from "./SchoolFacilities";
-import SmartSchool from "./SmartSchool";
-import PrincipalProfileSection from "./PrincipalProfileSection";
+import ElfsightInstagramFeed from "./ElfsightInstagramFeed";
 import Contact from "./Contact";
+import SmartSchool from "./SmartSchool";
 import Footer from "./Footer";
 
 export default function InstituteLanding() {
@@ -17,9 +18,10 @@ export default function InstituteLanding() {
       <AcademicPrograms />
       <WhyUs />
       <ExamTraining />
+      {/* <ElfsightInstagramFeed /> */}
       <SchoolFacilities />
-      <SmartSchool />
-      <PrincipalProfileSection />
+      {/* <Achievements /> */}
+            <SmartSchool />
 
       <Contact />
       <Footer />

@@ -14,7 +14,7 @@ import {
 import { MdAutoGraph, MdEmail } from "react-icons/md";
 
 export const schoolInfo = {
-  name: "Vaksiddhi Public School ",
+  name: "Vaksiddhi Public School",
   shortName: "Vaksiddhi",
   tagline: "Every Dream Deserves A Path.",
   logoTagline: "Nurturing Minds. Planting Knowledge.",
@@ -26,7 +26,7 @@ export const schoolInfo = {
   phoneLinks: ["#contact", "#contact"],
   email: "Visit the campus for admissions support",
   emailLink: "#contact",
-  hours: "Monday – Saturday: 9:00 AM – 5:00 PM",
+  hours: "Monday - Saturday: 9:00 AM - 5:00 PM",
   principal: "Principal, Vaksiddhi Public School",
   principalVision: "Creating the path for every dream through values, discipline, and future-ready learning.",
   whatsappLink: "#contact",
@@ -111,9 +111,9 @@ export const highlights = [
 
 export const examTraining = [
   {
-    title: "AI-Enabled Smart Classrooms",
+    title: "SEEP Smart Classrooms",
     detail:
-      "Modern classroom tools help teachers make concepts visual, interactive, and easier for every learner to understand.",
+      "Smart, experiential education tools help teachers make concepts visual, interactive, and easier to understand.",
   },
   {
     title: "Experiential Learning",

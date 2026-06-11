@@ -9,29 +9,29 @@ const contactDetails = [
   {
     icon: Phone,
     title: schoolInfo.phones[0],
-    description: "Connect with the school office for admission guidance, campus visits, and grade-level information.",
+    description: "Connect with the admissions team for campus visits, grade details, and SEEP program guidance.",
     meta: schoolInfo.hours,
     bgColor: "bg-[#efe1e3]",
     textColor: "text-slate-800",
     iconColor: "text-[var(--brand-primary)]",
     shadow: "border border-[var(--brand-primary)]/20",
-    link: schoolInfo.phoneLinks[0], 
+    link: schoolInfo.phoneLinks[0],
   },
   {
     icon: FaWhatsapp,
     title: schoolInfo.phones[1],
-    description: "Plan a visit to understand the learning environment, values, and student growth pathway.",
-    meta: "Admission and campus visit support",
+    description: "Visit the campus desk for admissions support, parent guidance, and school tour scheduling.",
+    meta: "Admissions and campus visit support",
     bgColor: "bg-[#e8f7ef]",
     textColor: "text-slate-800",
     iconColor: "text-[#1fa855]",
     shadow: "border border-[#1fa855]/25",
-    link: schoolInfo.whatsappLink,
+    link: schoolInfo.phoneLinks[1],
   },
   {
     icon: MapPin,
     title: schoolInfo.addressShort,
-    description: "Visit our campus in Manvi for a school tour and admissions counselling.",
+    description: "Visit Vaksiddhi Public School in Manvi for infrastructure tour and admissions counseling.",
     meta: "Campus visits by appointment",
     bgColor: "bg-[#fff5db]",
     textColor: "text-slate-800",
@@ -43,7 +43,8 @@ const contactDetails = [
 ];
 
 function Contact() {
-  const mapEmbedUrl = `https://www.google.com/maps?q=${encodeURIComponent(SCHOOL_ADDRESS)}&output=embed`;
+  // Free Google Maps Embed URL using search
+  const mapEmbedUrl = `https://maps.google.com/maps?q=${encodeURIComponent(SCHOOL_ADDRESS)}&t=&z=15&ie=UTF8&iwloc=&output=embed`;
 
   return (
     <section id="contact" className="bg-[#faf8f2] pt-9">
@@ -53,7 +54,7 @@ function Contact() {
             Get in Touch With Vaksiddhi
           </h2>
           <p className="mb-3 mt-4 text-base text-slate-600 md:text-lg">
-            Reach our admissions team or visit the Manvi campus to begin your child&apos;s path with Vaksiddhi.
+            Visit our Manvi campus for admissions guidance, SEEP program details, and a school tour.
           </p>
         </div>
 
@@ -62,7 +63,7 @@ function Contact() {
             <a
               key={index}
               href={item.link}
-              target={item.link.startsWith('http') ? "_blank" : undefined}
+            target={item.link.startsWith('http') ? "_blank" : undefined}
               rel="noopener noreferrer"
               className={`
                 ${item.bgColor} ${item.textColor} ${item.shadow || ''} 

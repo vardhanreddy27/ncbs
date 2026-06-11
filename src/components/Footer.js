@@ -25,7 +25,7 @@ export default function Footer() {
           </a>
           <div className="mt-6 rounded-3xl border border-[var(--brand-secondary)]/25 bg-[var(--brand-primary)]/5 p-4">
             <p className="text-sm font-semibold text-slate-900">For parents</p>
-            <p className="mt-1 text-sm text-slate-600">Admissions guidance, learning support, and parent connection for every growth stage.</p>
+            <p className="mt-1 text-sm text-slate-600">Stay connected with school updates, homework, attendance, and performance support.</p>
             <div className="mt-4 flex flex-wrap gap-3">
               <a href="#" aria-label="Download on Play Store" className="block transition hover:scale-[1.02]">
                 <Image src="/playstore.webp" alt="Download on Google Play" width={140} height={42} className="h-10 w-auto" />
@@ -56,7 +56,8 @@ export default function Footer() {
           <ul className="mt-4 space-y-2 text-slate-600">
             <li>Nursery Foundation</li>
             <li>Primary Learning</li>
-            <li>Grades VI to X</li>
+            <li>High School Readiness</li>
+            <li>SEEP Smart Learning</li>
           </ul>
         </div>
 
@@ -64,25 +65,19 @@ export default function Footer() {
           <h5 className="text-sm font-extrabold uppercase tracking-wider text-slate-900">Contact Info</h5>
           <ul className="mt-4 space-y-2 text-slate-600">
             <li>{schoolInfo.location}</li>
-            <li>{schoolInfo.hours}</li>
-            {schoolInfo.phones.map((phone, index) => (
+            {schoolInfo.phones.map((phone) => (
               <li key={phone}>
-                <a href={schoolInfo.phoneLinks[index]} className="transition hover:text-[var(--brand-primary)]">
+                <a href={schoolInfo.phoneLinks?.[schoolInfo.phones.indexOf(phone)] || "#contact"} className="transition hover:text-[var(--brand-primary)]">
                   {phone}
                 </a>
               </li>
             ))}
-            <li>
-              <a href={schoolInfo.emailLink} className="transition hover:text-[var(--brand-primary)]">
-                {schoolInfo.email}
-              </a>
-            </li>
           </ul>
           <div className="mt-5 flex items-center gap-3 text-[var(--brand-primary)]">
-            <a href="https://www.facebook.com/profile.php?id=61584411158223" aria-label="Facebook" className="rounded-full bg-[var(--brand-secondary)]/15 p-2" target="_blank" rel="noopener noreferrer">
+            <a href="#contact" aria-label="Facebook" className="rounded-full bg-[var(--brand-secondary)]/15 p-2">
               <FaFacebookF className="h-4 w-4" />
             </a>
-            <a href="https://www.instagram.com/" aria-label="Instagram" className="rounded-full bg-[var(--brand-secondary)]/15 p-2" target="_blank" rel="noopener noreferrer">
+            <a href="#contact" aria-label="Instagram" className="rounded-full bg-[var(--brand-secondary)]/15 p-2">
               <FaInstagram className="h-4 w-4" />
             </a>
           </div>
