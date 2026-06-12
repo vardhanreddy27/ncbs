@@ -7,7 +7,7 @@ function Menu() {
     <div className="m-4 h-full flex justify-between items-center text-slate-900">
       <div>
         <div className="flex items-center gap-3">
-          <Image src="/logo.jpg" alt="Vaksiddhi Public School logo" width={40} height={40} className="h-10 w-10 rounded-full object-cover" />
+          <Image src="/logo.png" alt="Vaksiddhi Public School logo" width={40} height={40} className="h-10 w-10 rounded-full object-cover" />
           <h2 id="title" className="font-bold logo text-[var(--brand-primary)]">Vaksiddhi</h2>
         </div>
       </div>

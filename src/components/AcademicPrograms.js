@@ -28,17 +28,17 @@ export default function AcademicPrograms() {
         description:
           "We begin by igniting the spark of why. Students ask questions, discuss ideas, think critically, and learn to discover knowledge.",
         topImage: "/physicslab.jpeg",
-        bottomImage: "/mathslabsection.jpg",
+        bottomImage: "/question.png",
         topCardTitle: "Question First",
         topCardText: "Every lesson encourages curiosity, reasoning, and confident classroom participation.",
         midCardTitle: "Thinking Skills",
         midCardText:
           "Teachers guide children to explain, compare, and connect ideas instead of memorizing blindly.",
         topCardBg: "rgba(18, 61, 109, 0.14)",
-        topTitleColor: "text-[var(--brand-accent)]",
+        topTitleColor: "text-black",
         topTextColor: "text-slate-700",
         midCardBg: "rgba(212, 161, 31, 0.24)",
-        midTitleColor: "black",
+        midTitleColor: "text-black",
         midTextColor: "text-slate-700",
       },
       {
@@ -46,8 +46,8 @@ export default function AcademicPrograms() {
         title: "2. Experiential Learning",
         description:
           "Students learn by doing through exploration, hands-on activities, AI Smart Classes, sports, culture, and real-world examples.",
-        topImage: "/classroom2.jpeg",
-        bottomImage: "/classroom.jpeg",
+        topImage: "/care.png",
+        bottomImage: "https://5.imimg.com/data5/ANDROID/Default/2024/7/432972697/LK/JJ/EF/42535054/product-jpeg-1000x1000.jpg",
         topCardTitle: "Real Understanding",
         topCardText: "Classroom learning is connected to observation, activity, practice, and application.",
         midCardTitle: "Smart Ecosystem",
@@ -57,7 +57,7 @@ export default function AcademicPrograms() {
         topTitleColor: "text-[var(--brand-primary)]",
         topTextColor: "text-slate-700",
         midCardBg: "rgba(18, 61, 109, 0.2)",
-        midTitleColor: "text-[var(--brand-accent)]",
+        midTitleColor: "text-black",
         midTextColor: "text-slate-700",
       },
       {
@@ -65,18 +65,18 @@ export default function AcademicPrograms() {
         title: "3. Excellence With Discipline",
         description:
           "Every child is nurtured to achieve personal best through confidence, mastery, responsibility, focus, and resilience.",
-        topImage: "/students.jpeg",
-        bottomImage: "/exam.jpeg",
+        topImage: "/classroom.png",
+        bottomImage: "/smartclass.png",
         topCardTitle: "JEE & NEET Edge",
         topCardText: "Specialized foundation coaching begins from VI Standard onward while school basics stay strong.",
         midCardTitle: "Future Ready",
         midCardText:
           "State Syllabus, CBSE curriculum readiness, values, and personal care prepare learners for opportunity.",
         topCardBg: "rgba(18, 61, 109, 0.16)",
-        topTitleColor: "text-[var(--brand-accent)]",
+        topTitleColor: "text-black",
         topTextColor: "text-slate-700",
         midCardBg: "#7ec1ff82",
-        midTitleColor: "black",
+        midTitleColor: "text-black",
         midTextColor: "text-slate-700",
       },
     ],
@@ -147,7 +147,9 @@ export default function AcademicPrograms() {
               {steps.map((step, index) => (
                 <span
                   key={step.phase}
-                  className={`text-slate-500 sm:${index === activeStep ? "text-[var(--brand-primary)]" : "text-slate-400"} sm:transition-colors sm:duration-300`}
+                  className={`text-slate-500 sm:transition-colors sm:duration-300 ${
+                    index === activeStep ? "sm:text-[var(--brand-primary)]" : "sm:text-slate-400"
+                  }`}
                 >
                   {step.phase}
                 </span>

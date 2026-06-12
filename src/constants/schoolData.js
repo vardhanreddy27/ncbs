@@ -41,8 +41,8 @@ export const schoolInfo = {
 };
 
 export const brand = {
-  primary: "#0B3D2E",
-  secondary: "#145A32",
+  primary: "rgb(18 20 45)",
+  secondary: "rgb(18 20 45)",
   accent: "#D4A64A",
 };
 
@@ -58,11 +58,11 @@ export const navLinks = [
 export const heroCards = [
   {
     title: "AI Smart Classes",
-    color: "bg-[#145A32]/20",
+    color: "bg-[#12142D]/20",
   },
   {
     title: "SEED Learning",
-    color: "bg-[#0B3D2E]/12",
+    color: "bg-[#12142D]/12",
   },
   {
     title: "Hostel Care",

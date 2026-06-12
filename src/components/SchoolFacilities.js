@@ -1,136 +1,101 @@
 import Image from "next/image";
-import {
-  Calculator,
-  Atom,
-  FlaskConical,
-  Dna,
-  Bot,
-  Monitor,
-  Volleyball,
-  BookOpen,
-  Gamepad2,
-  Bus,
-  Presentation
-} from "lucide-react";
 
 const facilities = [
   {
     title: "AI Smart Classes",
-    img: "https://www.lalalajpatraischool.com/img/LabMaths1.jpeg",
-    desc: "AI-powered learning methods and smart classroom tools.",
-    icon: Calculator
+    img: "/smartclass.png",
+    desc: "AI-powered learning methods and smart classroom tools."
   },
   {
     title: "State & CBSE Curriculum Readiness",
-    img: "https://www.afshebbal.ac.in/userfiles/file/Ph%201.JPG",
+    img: "/neet.png",
     desc: "State Syllabus with CBSE affiliation currently in process.",
-    icon: Atom
+    imagePosition: "object-[center_42%]"
   },
   {
     title: "JEE & NEET Foundation",
-    img: "https://vspkinternational.edu.in/content/IMG-20240930-WA0077.jpg",
-    desc: "Specialized coaching from VI Standard onwards.",
-    icon: FlaskConical
+    img: "/iit.png",
+    desc: "Specialized coaching from VI Standard onwards."
   },
   {
-    title: "Separate Boys Hostel",
-    img: "https://www.edufab.in/wp-content/uploads/2024/07/Biology-lab.jpg",
+    title: "Indoor games & Activity Area",
+    img: "/indoor.png",
     desc: "Premium residential care and personal attention.",
-    icon: Dna
+    imagePosition: "object-[center_72%]"
   },
   {
     title: "Separate Girls Hostel",
-    img: "https://cloud9.shauryasoft.com/media/contentpage_178_115_2.jpg?638041330024674109?spPDV",
-    desc: "Safe residential facility with attentive care.",
-    icon: Bot
+    img: "https://girlshostelindehradun.wordpress.com/wp-content/uploads/2015/06/banner3.png",
+    desc: "Safe residential facility with attentive care."
   },
   {
     title: "Computer & Innovation Lab",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeUCGIeePH-W-vq2j11yMKY8kLKL-HgFx_4Q&s",
-    desc: "Digital confidence, creativity, and future skills.",
-    icon: Monitor
+    img: "https://i0.wp.com/www.education.edu/wp-content/uploads/2016/09/4Y7A7527-scaled.jpg?fit=2560%2C1707&ssl=1",
+    desc: "Digital confidence, creativity, and future skills."
   },
   {
     title: "Sports Development",
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHtafjeZMs2ERC0G3ovoBil-t0ARP7WT5URQ&s",
-    desc: "Strong emphasis on fitness, teamwork, and confidence.",
-    icon: Volleyball
+    img: "/playground.png",
+    desc: "Strong emphasis on fitness, teamwork, and confidence."
   },
   {
     title: "Library & Reading Culture",
     img: "https://www.al.com/resizer/v2/4SU5I25YWNABLOEM43OPS63UK4.JPG?auth=fe2efbcd118d7f8f895c4e63d773888906f577035af9fda73a8569ce487adffe&width=1280&smart=true&quality=90",
-    desc: "Reading habits that support curiosity and expression.",
-    icon: BookOpen
+    desc: "Reading habits that support curiosity and expression."
   },
   {
     title: "Cultural Activities",
     img: "https://dpsbopal-ahd.edu.in/Uploads/vollyball_201511020512378937.jpg",
-    desc: "Stage confidence, creativity, and holistic development.",
-    icon: Volleyball
+    desc: "Stage confidence, creativity, and holistic development."
   },
   {
     title: "Hesitant Learner Care",
-    img: "https://strawberryfieldshighschool.com/wp-content/uploads/2019/07/IMG-20190718-WA0035.jpg",
-    desc: "Dedicated personal support for children who need extra confidence.",
-    icon: Gamepad2
+    img: "/care.png",
+    desc: "Dedicated personal support for children who need extra confidence."
   },
   {
     title: "Transport Support",
     img: "https://swarajya.gumlet.io/swarajya/2025-11-05/5g1ji9ar/schooltransport.jpg?w=610&q=75&compress=true&format=auto",
-    desc: "Convenient support for safe student movement.",
-    icon: Bus
+    desc: "Convenient support for safe student movement."
   },
   {
     title: "Free Education Initiative",
     img: "https://twss.edu.in/wp-content/uploads/2024/12/Conference-Hall-Banner-1024x683.webp",
-    desc: "Free education program for students who are orphan children.",
-    icon: Presentation
+    desc: "Free education program for students who are orphan children."
   }
 ];
 
 export default function SchoolFacilities() {
   return (
-    <section className="mx-auto max-w-8xl px-4 py-12 sm:px-6 lg:px-8">
-      <h2 className="mb-20 py-8 text-3xl font-extrabold text-[var(--brand-primary)] sm:text-4xl text-center">
+    <section className="mx-auto max-w-8xl px-4 py-10 sm:px-6 lg:px-8">
+      <h2 className="mb-10 text-center text-3xl font-extrabold text-[var(--brand-primary)] sm:text-4xl">
         Facilities & Student Support
       </h2>
 
-      <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
-        {facilities.map((f, i) => {
-          const Icon = f.icon;
-
+      <div className="grid gap-5 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {facilities.map((f) => {
           return (
             <div
               key={f.title}
-              className="group rounded-2xl bg-white shadow-lg overflow-hidden flex flex-col transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+              className="group flex flex-col overflow-hidden rounded-lg border border-slate-100 bg-white shadow-md transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              <div className="relative h-40 w-full">
+              <div className={`relative h-56 w-full sm:h-60 lg:h-64 ${f.imageFit === "object-contain" ? "bg-slate-50" : ""}`}>
                 <Image
                   src={f.img}
                   alt={f.title}
                   fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  className={`${f.imageFit || "object-cover"} ${f.imagePosition || "object-center"} ${f.imageFit === "object-contain" ? "" : "group-hover:scale-105"} transition-transform duration-300`}
                   sizes="(max-width: 768px) 100vw, 33vw"
-                  priority={i < 3}
                 />
               </div>
 
-              <div className="p-4 flex-1 flex flex-col justify-between">
-                <div>
-                  <h3 className="text-lg font-bold text-slate-900 mb-1">
-                    {f.title}
-                  </h3>
-                  <p className="text-sm text-slate-600 mb-3">
-                    {f.desc}
-                  </p>
-                </div>
-
-                {/* ICON AREA */}
-                <div className="flex justify-end">
-                  <div className="p-2 rounded-full bg-[var(--brand-primary)]/10 group-hover:bg-[var(--brand-primary)] transition">
-                    <Icon className="w-5 h-5 text-[var(--brand-primary)] group-hover:text-white" />
-                  </div>
-                </div>
+              <div className="p-4">
+                <h3 className="mb-1 text-base font-bold leading-snug text-slate-900">
+                  {f.title}
+                </h3>
+                <p className="text-sm leading-relaxed text-slate-600">
+                  {f.desc}
+                </p>
               </div>
             </div>
           );

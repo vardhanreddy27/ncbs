@@ -21,10 +21,10 @@ export default function Footer() {
             <p className="text-sm font-semibold text-slate-900">Admissions Open 2026-27</p>
             <p className="mt-1 text-sm text-slate-600">Pre-School to Grade X, currently expanding from Pre-School to VIII, with State Syllabus and CBSE affiliation in process.</p>
             <div className="mt-4 flex flex-wrap gap-3 text-xs font-bold uppercase tracking-[0.14em] text-[var(--brand-primary)]">
-              <a href="#contact" className="rounded-full bg-white px-4 py-2 shadow-sm transition hover:text-[var(--brand-accent)]">
+              <a href="#contact" className="rounded-full bg-white px-4 py-2 shadow-sm transition hover:text-black">
                 Enquire Now
               </a>
-              <a href={schoolInfo.emailLink} className="rounded-full bg-white px-4 py-2 shadow-sm transition hover:text-[var(--brand-accent)]">
+              <a href={schoolInfo.emailLink} className="rounded-full bg-white px-4 py-2 shadow-sm transition hover:text-black">
                 Email Admissions
               </a>
             </div>

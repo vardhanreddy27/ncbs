@@ -35,11 +35,11 @@ export default function Header() {
           <div className="text-center sm:flex-1">{schoolInfo.admissions} - {schoolInfo.parentOrganization}</div>
 
           <div className="flex flex-wrap items-center justify-start gap-2 text-[11px] sm:justify-end sm:text-xs">
-            <a href="#contact" className="inline-flex items-center gap-1.5 transition hover:text-[var(--brand-accent)]">
+            <a href="#contact" className="inline-flex items-center gap-1.5 transition hover:text-black">
               <span>{schoolInfo.phones[0]}</span>
             </a>
             <span className="text-white/70">|</span>
-            <a href="#contact" className="inline-flex items-center gap-1.5 transition hover:text-[var(--brand-accent)]">
+            <a href="#contact" className="inline-flex items-center gap-1.5 transition hover:text-black">
               <span>{schoolInfo.email}</span>
             </a>
           </div>
@@ -49,8 +49,8 @@ export default function Header() {
       <header className="sticky top-0 z-50 border-b border-slate-200 bg-white">
         <div className="mx-auto grid grid-cols-[1fr_auto] items-center gap-2 px-4 py-2 sm:px-6 sm:py-3 md:grid-cols-[1fr_auto_1fr] md:gap-0 md:py-0 lg:px-8">
           <a href="#" className="justify-self-start text-[var(--brand-primary)]">
-            <div className="flex items-center gap-2 sm:gap-3">
-              <Image src="/logo.jpg" alt="Vaksiddhi Public School logo" width={52} height={67} className="h-10 w-10 rounded-full object-cover sm:h-12 sm:w-12 md:h-18 md:w-18 lg:h-[74px] lg:w-[74px]" priority />
+            <div className="flex items-center gap-2 py-3 sm:gap-3">
+              <Image src="/logo.png" alt="Vaksiddhi Public School logo" width={52} height={67} className="h-10 w-10 rounded-full object-cover sm:h-12 sm:w-12 md:h-18 md:w-18 lg:h-[74px] lg:w-[74px]" />
               <div className="flex flex-col text-center justify-center leading-tight">
                 <span className="mt-0.5 flex w-full justify-center text-base font-extrabold text-[var(--brand-primary)] sm:text-lg lg:text-lg">
                
@@ -58,7 +58,7 @@ export default function Header() {
              
                 </span>
 
-                <span className="text-[10px] font-semibold uppercase tracking-[0.04em] text-slate-700 sm:text-xs">
+                <span className="text-[2px] font-semibold uppercase   text-slate-700 sm:text-xs">
                   {schoolInfo.logoTagline}
                 </span>
                 <span className="text-[10px] font-semibold text-slate-600 sm:text-xs">{schoolInfo.logoSubtagline}</span>

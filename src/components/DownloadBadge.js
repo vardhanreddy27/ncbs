@@ -10,7 +10,7 @@ function DownloadBadge() {
       <div className="md:w-3/5">
         <div className="rounded-2xl bg-white p-4">
           <div className="flex items-center gap-3">
-            <Image src="/logo.jpg" height={48} width={48} alt="Vaksiddhi Public School logo" className="h-12 w-12 rounded-full object-cover" />
+            <Image src="/logo.png" height={48} width={48} alt="Vaksiddhi Public School logo" className="h-12 w-12 rounded-full object-cover" />
             <h1 className='font-bold text-[var(--brand-primary)]'>VAKSIDDHI</h1>
           </div>
           <p className='mt-3 text-slate-700'>

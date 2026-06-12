@@ -7,7 +7,7 @@ export default function PhoneLinks() {
         <a
           key={phone}
           href={schoolInfo.phoneLinks[index]}
-          className="font-semibold text-[var(--brand-primary)] transition hover:text-[var(--brand-accent)]"
+          className="font-semibold text-[var(--brand-primary)] transition hover:text-black"
         >
           {phone}
         </a>

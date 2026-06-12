@@ -6,8 +6,8 @@
 :root {
   --background: #F8F4EA;
   --foreground: #1C1C1C;
-  --brand-primary: #0B3D2E;
-  --brand-secondary: #145A32;
+  --brand-primary: rgb(18 20 45);
+  --brand-secondary: rgb(18 20 45);
   --brand-accent: #D4A64A;
 }
 

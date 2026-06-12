@@ -57,11 +57,10 @@ export default function WhyChooseVaksiddhi() {
                   style={{ borderRadius: "2rem" }}
                 >
                   <Image
-                    src="/whyus.jpeg"
+                    src="/whyus.png"
                 alt="Vaksiddhi Public School classroom"
                     fill
                     className="object-cover"
-                    priority
                   />
                 </div>
               </div>
@@ -162,7 +161,6 @@ export default function WhyChooseVaksiddhi() {
           scale-125       /* zoom in */
           -translate-y-10 /* 🔥 crops TOP part */
         "
-        priority
       />
 
     </div>

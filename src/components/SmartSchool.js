@@ -105,7 +105,6 @@ const SmartSchool = () => {
                 alt={appScreens[0].label}
                 fill
                 className="object-cover"
-                priority
               />
             </div>
 
@@ -122,7 +121,6 @@ const SmartSchool = () => {
                 alt={appScreens[1].label}
                 fill
                 className="relative object-cover"
-                priority
               />
             </div>
           </div>

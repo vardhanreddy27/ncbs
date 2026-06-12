@@ -6,23 +6,40 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "www.lalalajpatraischool.com",
-      },{
+      },
+      {
         protocol: "https",
         hostname: "vspkinternational.edu.in",
       },
       {
         protocol: "https",
+        hostname: "i0.wp.com",
+      },
+      {
+        protocol: "https",
+        hostname: "5.imimg.com",
+      },
+      {
+        protocol: "https",
         hostname: "www.afshebbal.ac.in",
-      },  {
+      },
+      {
+        protocol: "https",
+        hostname: "girlshostelindehradun.wordpress.com",
+      },
+      {
         protocol: "https",
         hostname: "www.edufab.in",
-      }, {
+      },
+      {
         protocol: "https",
         hostname: "cloud9.shauryasoft.com",
-      }, {
+      },
+      {
         protocol: "https",
         hostname: "encrypted-tbn0.gstatic.com",
-      },{
+      },
+      {
         protocol: "https",
         hostname: "www.al.com",
       },

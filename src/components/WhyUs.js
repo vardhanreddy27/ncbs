@@ -6,7 +6,7 @@ const programs = [
     title: "SEED Philosophy",
     icon: BookOpen,
     text: "Socratic thinking, experiential learning, excellence, and discipline shape how every child learns and grows.",
-    buttonStyle: "bg-[var(--brand-accent)]/10 text-[var(--brand-accent)]",
+    buttonStyle: "bg-[var(--brand-accent)]/10 text-black",
     iconWrapStyle: "bg-[var(--brand-secondary)]/12 text-[var(--brand-primary)]",
   },
   {
@@ -21,7 +21,7 @@ const programs = [
     title: "Care Beyond Classrooms",
     icon: HeartHandshake,
     text: "Separate hostels for boys and girls, personal care for hesitant learners, and free education support for orphan children.",
-    buttonStyle: "bg-[var(--brand-accent)]/10 text-[var(--brand-accent)]",
+    buttonStyle: "bg-[var(--brand-accent)]/10 text-black",
     iconWrapStyle: "bg-[var(--brand-secondary)]/12 text-[var(--brand-primary)]",
   },
 ];

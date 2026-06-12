@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 md:flex md:items-center md:justify-between">
         <div className="md:w-1/2 mb-8 md:mb-0">
           <div className="mb-4 flex items-center gap-3">
-            <Image src="/logo.jpg" alt="Vaksiddhi Public School logo" width={48} height={48} className="h-12 w-12 rounded-full object-cover ring-2 ring-[var(--brand-accent)]/30" />
+            <Image src="/logo.png" alt="Vaksiddhi Public School logo" width={48} height={48} className="h-12 w-12 rounded-full object-cover ring-2 ring-[var(--brand-accent)]/30" />
             <span className="text-sm font-semibold uppercase tracking-[0.25em] text-[var(--brand-primary)]">Vaksiddhi</span>
           </div>
           <h1 className="mb-4 mt-8 text-4xl font-bold">Admissions Open for 2026-27</h1>
@@ -35,7 +35,6 @@ const Hero = () => {
             alt="Learning"
             width={450}
             height={400}
-            priority
           />
         </div>
       </div>

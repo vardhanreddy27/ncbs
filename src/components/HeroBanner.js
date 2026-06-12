@@ -24,10 +24,9 @@ export default function HeroBanner() {
         <div className="overflow-hidden  ">
           <div className="relative min-h-[600px] sm:min-h-[700px] lg:min-h-screen">
             <Image
-              src="/herobg.jpg"
+              src="/iit.png"
               alt="Happy children learning"
               fill
-              priority
               sizes="100vw"
               className="object-cover object-[center_top]"
             />
@@ -53,13 +52,13 @@ export default function HeroBanner() {
                 <div className="mt-6 grid grid-cols-2 gap-3 sm:mt-7 sm:flex sm:flex-row sm:flex-wrap sm:gap-3">
                   <a
                     href="#programs"
-                    className="w-full rounded-full border border-[var(--brand-accent)]/30 bg-white px-3 py-3 text-center text-xs font-bold text-[var(--brand-accent)] sm:w-auto sm:px-6 sm:text-sm"
+                    className="w-full rounded-full border border-[var(--brand-accent)]/30 bg-white px-3 py-3 text-center text-xs font-bold text-black sm:w-auto sm:px-6 sm:text-sm"
                   >
                     Explore SEED Programs
                   </a>
                   <a
                     href="#contact"
-                    className="w-full rounded-full bg-[var(--brand-primary)] px-3 py-3 text-center text-xs font-bold text-white shadow-[0_10px_24px_rgba(11,61,46,0.25)] sm:w-auto sm:px-6 sm:text-sm"
+                    className="w-full rounded-full bg-[var(--brand-primary)] px-3 py-3 text-center text-xs font-bold text-white shadow-[0_10px_24px_rgba(18,20,45,0.25)] sm:w-auto sm:px-6 sm:text-sm"
 
                   >
                     Admissions Open 2026-27
@@ -87,7 +86,7 @@ export default function HeroBanner() {
               subtitle: "Grade I to VIII",
               tone: "bg-[linear-gradient(180deg,#1e4a8b_0%,#123d6d_100%)]",
               img: "/Mathlab.jpg",
-              video: "/mathslab.mov",
+              video: "/geo.mp4",
               alt: "Primary school math lab",
               objPos: "object-center",
               mediaShift: "",
@@ -151,7 +150,6 @@ export default function HeroBanner() {
                       alt={item.alt}
                       width={640}
                       height={350}
-                      priority
                       sizes="(max-width: 640px) 100vw, 33vw"
                       className={`h-[15rem] w-full object-cover ${item.objPos} ${item.mediaShift} sm:h-[16rem]`}
                     />
