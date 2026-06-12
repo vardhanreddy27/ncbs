@@ -28,7 +28,7 @@ export default function AcademicPrograms() {
         description:
           "We begin by igniting the spark of why. Students ask questions, discuss ideas, think critically, and learn to discover knowledge.",
         topImage: "/physicslab.jpeg",
-        bottomImage: "/question.png",
+        bottomImage: "/question.webp",
         topCardTitle: "Question First",
         topCardText: "Every lesson encourages curiosity, reasoning, and confident classroom participation.",
         midCardTitle: "Thinking Skills",
@@ -65,8 +65,8 @@ export default function AcademicPrograms() {
         title: "3. Excellence With Discipline",
         description:
           "Every child is nurtured to achieve personal best through confidence, mastery, responsibility, focus, and resilience.",
-        topImage: "/classroom.png",
-        bottomImage: "/smartclass.png",
+        topImage: "/classroom.webp",
+        bottomImage: "/smartclass.webp",
         topCardTitle: "JEE & NEET Edge",
         topCardText: "Specialized foundation coaching begins from VI Standard onward while school basics stay strong.",
         midCardTitle: "Future Ready",

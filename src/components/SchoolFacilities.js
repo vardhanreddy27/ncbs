@@ -3,12 +3,12 @@ import Image from "next/image";
 const facilities = [
   {
     title: "AI Smart Classes",
-    img: "/smartclass.png",
+    img: "/smartclass.webp",
     desc: "AI-powered learning methods and smart classroom tools."
   },
   {
     title: "State & CBSE Curriculum Readiness",
-    img: "/neet.png",
+    img: "/neet.webp",
     desc: "State Syllabus with CBSE affiliation currently in process.",
     imagePosition: "object-[center_42%]"
   },
